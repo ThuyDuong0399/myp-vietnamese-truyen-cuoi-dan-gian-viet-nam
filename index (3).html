@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Truyện cười dân gian · Ôn tập MYP Tiếng Việt</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Be+Vietnam+Pro:wght@400;500;600;700&family=Noto+Serif:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#24304F;--cream:#FFFAF2;--line:#EBDFCD;--muted:#6B7591;--coral:#D9533B;--teal:#1E8C6E;--khai:#E8577A;--thua:#8E6BD8;--chuyen:#1FA47A;--hop:#3A8BE0;--gold:#F2B94B}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:"Be Vietnam Pro",system-ui,-apple-system,"Segoe UI",sans-serif;font-size:16px;line-height:1.65}
+h1,h2,h3,h4{font-family:"Baloo 2","Be Vietnam Pro",system-ui,sans-serif;margin:0;line-height:1.15}
+p{margin:.4em 0}
+.nav{position:sticky;top:0;z-index:20;background:rgba(255,250,242,.96);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+.nav-in{max-width:1080px;margin:auto;display:flex;gap:4px;overflow-x:auto;padding:8px 12px;scrollbar-width:none}
+.nav a{white-space:nowrap;font-size:14px;text-decoration:none;padding:7px 12px;border-radius:999px;color:var(--ink);font-weight:500}
+.nav a:hover{background:#F3E8D6}
+.hero{position:relative;overflow:hidden;color:#fff;background:linear-gradient(180deg,#25245A 0%,#4A3A84 60%,#8A5FA8 100%);padding:58px 24px 64px}
+.hero-in{position:relative;z-index:2;max-width:1040px;margin:auto;display:grid;grid-template-columns:1.3fr .9fr;gap:30px;align-items:end}
+.hero .kicker{color:#FFD9A8}
+.hero h1{font-size:clamp(42px,6vw,70px);font-weight:800;margin:10px 0 2px}
+.hero .sub{color:#FFD9A8;font-family:"Noto Serif",Georgia,serif;font-size:19px;font-style:italic}
+.hero p.lead{color:#ECE7F8;max-width:560px;margin-top:14px}
+.hstats{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.hstat{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);border-radius:16px;padding:12px 14px}
+.hstat b{display:block;font-family:"Baloo 2",sans-serif;font-size:24px;line-height:1.1;color:#FFE3B3}
+.hstat span{font-size:13px;color:#E4DDF5}
+.moon{position:absolute;z-index:1;right:8%;top:-40px;width:150px;height:150px;border-radius:50%;background:radial-gradient(circle at 40% 40%,#FFF6D6,#F2D98A 60%,rgba(242,217,138,.25) 75%);box-shadow:0 0 80px rgba(255,236,170,.45)}
+.hero svg.skyline{position:absolute;left:0;bottom:-2px;width:100%;height:110px;z-index:1}
+.kicker{font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--coral)}
+section.sec{max-width:1040px;margin:0 auto;padding:46px 22px;border-top:1px solid var(--line)}
+section.sec:first-of-type{border-top:0}
+.sec h2{font-size:38px;margin-top:6px}
+.bar{width:90px;height:5px;border-radius:5px;background:var(--coral);margin:10px 0 22px}
+.lh{display:flex;align-items:center;gap:10px;margin:30px 0 14px}
+.lh b{flex:0 0 28px;height:28px;border-radius:50%;background:var(--coral);color:#fff;display:grid;place-items:center;font-size:14px}
+.lh span{font-family:"Baloo 2",sans-serif;font-size:22px;font-weight:700}
+.lh::after{content:"";flex:1;height:1px;background:var(--line)}
+.card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:18px 20px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.step{background:#fff;border:1px solid var(--line);border-radius:16px;padding:14px 16px;border-top:5px solid var(--c,var(--coral))}
+.step .n{font-family:"Baloo 2",sans-serif;font-weight:700;color:var(--c,var(--coral));font-size:20px}
+.step h4{font-size:18px;margin:2px 0 4px}
+.step p{font-size:14px;color:#3A4563;margin:0}
+.pill{display:inline-block;padding:3px 12px;border-radius:999px;color:#fff;font-weight:700;font-size:12px;background:var(--c,var(--coral));white-space:nowrap}
+.khai{--c:var(--khai)}.thua{--c:var(--thua)}.chuyen{--c:var(--chuyen)}.hop{--c:var(--hop)}
+.tint-khai{background:#FDE8EF}.tint-thua{background:#F0EAFD}.tint-chuyen{background:#E2F5EE}.tint-hop{background:#E4F0FD}
+.note{background:#FFF8E6;border:1.5px dashed var(--gold);border-radius:14px;padding:12px 16px;font-size:15px}
+.ghinho{border-left:5px solid var(--coral);background:linear-gradient(90deg,#FDE9E3,#FFF5EE);border-radius:14px;padding:14px 18px;margin-top:16px}
+.ghinho b.t{font-family:"Baloo 2",sans-serif;color:var(--coral);font-size:16px;letter-spacing:.04em}
+table{width:100%;border-collapse:collapse;background:#fff;border-radius:14px;overflow:hidden;border:1px solid var(--line);font-size:15px}
+th{background:var(--ink);color:#fff;text-align:left;font-size:13px;font-weight:600;padding:10px 12px}
+td{padding:10px 12px;border-top:1px solid var(--line);vertical-align:top}
+.hv{font-family:"Noto Serif CJK TC","Noto Serif TC","Songti TC",serif}
+.poem{font-family:"Noto Serif",Georgia,serif;font-size:18px;line-height:1.95;background:#fff;border:1px solid var(--line);border-radius:18px;padding:20px 26px}
+.poem .cap{display:block;text-align:right;font-family:"Be Vietnam Pro",sans-serif;font-size:13px;color:var(--muted);margin-top:6px}
+.zh{font-family:"Noto Serif CJK TC","Noto Serif TC","Songti TC",serif;font-size:19px;color:var(--c,var(--ink));letter-spacing:.08em}
+.wordgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.wc{background:#fff;border:1px solid var(--line);border-radius:14px;padding:10px 12px}
+.wc .hn{font-family:"Noto Serif CJK TC","Noto Serif TC",serif;font-size:22px}
+.wc b{display:block}
+.wc i{color:#2C7F8C;font-size:13px}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
+.chips span{font-size:12.5px;background:#F4EEE3;border-radius:999px;padding:2px 10px;color:#4A3F2F}
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin:6px 0 18px}
+.tbtn{border:1px solid var(--line);background:#fff;border-radius:999px;padding:9px 16px;font:inherit;font-weight:600;cursor:pointer;color:var(--ink)}
+.tbtn.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+.pane{display:none}
+.pane.on{display:block}
+.pgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(262px,1fr));gap:14px}
+.pc{background:#fff;border:1px solid var(--line);border-radius:16px;padding:14px 16px;display:flex;flex-direction:column;gap:5px}
+.pc .bnum{font-family:"Baloo 2",sans-serif;font-weight:700;color:var(--coral);font-size:14px}
+.pc h3{font-size:19px}
+.pc p{margin:0;font-size:14.5px;color:#3A4563}
+.pc.taught{border:2px solid var(--teal)}
+.fbar{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:16px}
+.fbtn{border:1px solid var(--line);background:#fff;border-radius:999px;padding:6px 13px;font:inherit;font-size:13px;cursor:pointer;color:var(--ink)}
+.fbtn.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+#q{flex:1;min-width:200px;padding:9px 14px;border-radius:999px;border:1px solid var(--line);font:inherit;background:#fff}
+.q{background:#fff;border:1px solid var(--line);border-radius:16px;padding:16px 18px;margin-bottom:12px}
+.q .qn{font-family:"Baloo 2",sans-serif;font-weight:700;color:var(--coral);font-size:17px}
+.opts button{display:block;width:100%;text-align:left;margin:6px 0;padding:9px 12px;border-radius:10px;border:1px solid var(--line);background:#FFFDF9;font:inherit;cursor:pointer;color:var(--ink)}
+.opts button.ok{background:#DDF4EA;border-color:var(--chuyen)}
+.opts button.bad{background:#FDE3E0;border-color:var(--coral)}
+.reveal{margin-top:8px;font-size:14.5px;background:#F4F7FD;border-radius:10px;padding:10px 12px;display:none}
+.reveal.on{display:block}
+.btnr{margin-top:8px;border:none;background:var(--teal);color:#fff;border-radius:999px;padding:7px 14px;font:inherit;font-size:13px;cursor:pointer;font-weight:600}
+.blank{border-bottom:1px dotted #9AA3B8;height:26px}
+.flow{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;align-items:stretch}
+.flow .fb{border-radius:16px;padding:12px;color:var(--ink);border-top:5px solid var(--c)}
+.flow .fb h4{color:var(--c);font-size:17px}
+.flow .arr{display:none}
+footer{max-width:1040px;margin:0 auto;padding:26px 22px 40px;color:var(--muted);font-size:13px;border-top:1px solid var(--line);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+@media (max-width:820px){.hero-in{grid-template-columns:1fr}.grid2,.grid3,.grid4,.wordgrid,.flow{grid-template-columns:1fr 1fr}.sec h2{font-size:30px}.moon{width:100px;height:100px;right:4%}}
+@media (max-width:520px){.grid2,.grid3,.grid4,.wordgrid,.flow{grid-template-columns:1fr}}
+.route{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:14px 0 20px}
+.route span{background:#fff;border:1.5px solid #E6DED0;border-radius:999px;padding:6px 12px;font-size:14px;color:#24304F}
+.route i{font-style:normal;color:#D9533B;font-weight:700}
+.pc{cursor:pointer;transition:transform .15s,box-shadow .15s}
+.pc:hover{transform:translateY(-2px);box-shadow:0 8px 22px rgba(36,48,79,.12)}
+.pc .ic{font-size:34px;line-height:1;margin-bottom:6px}
+.pc .tag{display:inline-block;margin-top:8px;font-size:12px;background:#F2B94B;color:#24304F;border-radius:999px;padding:2px 10px;font-weight:700}
+.mdl{position:fixed;inset:0;background:rgba(36,48,79,.45);display:none;align-items:center;justify-content:center;padding:18px;z-index:99}
+.mdl.on{display:flex}
+.mbox{background:#FFFAF2;max-width:640px;width:100%;max-height:88vh;overflow:auto;border-radius:18px;padding:22px 22px 26px;position:relative;box-shadow:0 20px 60px rgba(0,0,0,.25)}
+.mx{position:absolute;top:8px;right:12px;border:0;background:none;font-size:30px;cursor:pointer;color:#24304F;line-height:1}
+.mh{display:flex;gap:14px;align-items:center;padding-right:24px}
+.mh .ic{font-size:46px;line-height:1}
+.mh h3{margin:2px 0 0;font-size:24px}
+.mlab{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#1E8C6E;font-weight:700;margin-top:16px}
+.mpoem{background:#fff;border-radius:12px;padding:12px 16px;font-family:'Noto Serif',serif;font-size:16px;line-height:1.75;margin:6px 0 0;color:#24304F}
+.mpoem.vi{font-family:inherit;font-size:15px}
+.mchips span{display:inline-block;background:#E7F4EF;color:#1E8C6E;border-radius:999px;padding:4px 10px;margin:4px 4px 0 0;font-size:13px}
+.mgt{font-size:15px;line-height:1.75;margin:6px 0 0;color:#24304F}
+.mgo{margin-top:18px;background:#1E8C6E;color:#fff;border:0;border-radius:999px;padding:10px 18px;font-weight:700;cursor:pointer;font-size:15px}
+.hero{background:linear-gradient(180deg,#7A2A1F 0%,#C94A36 55%,#E9A23B 100%)}
+.hero .kicker{color:#FFE7B8}
+.hero h1{color:#fff}
+.hero .sub{color:#FFE7B8}
+.hero p.lead{color:#FFF4E6}
+.hero .emo{font-size:34px;letter-spacing:6px;margin-top:16px}
+.hstat b{color:#FFF1C9}
+.flow .fb{background:#fff;border:1px solid var(--line)}
+.flow .fb .en{display:block;font-family:"Be Vietnam Pro",sans-serif;font-style:italic;color:#2C7F8C;font-size:13px}
+.flow .fb .ico{font-size:28px;line-height:1}
+.flow .fb p{font-size:14px;color:#3A4563;margin:4px 0 0}
+.tbl-en{color:#2C7F8C;font-style:italic;font-size:13px;display:block}
+.def{font-size:17px}
+.gloss{color:#2C7F8C;font-style:italic;font-size:14.5px;margin-top:8px}
+.namebox{display:flex;gap:12px;flex-wrap:wrap;margin:6px 0 18px}
+.namebox div{flex:1;min-width:220px;border:1.5px dashed var(--gold);border-radius:12px;padding:8px 12px;background:#FFF8E6;font-size:14px}
+.qtype{font-family:"Baloo 2",sans-serif;font-size:20px;font-weight:700;margin:26px 0 8px;color:var(--ink)}
+.qtype small{font-family:"Be Vietnam Pro",sans-serif;font-size:13px;color:var(--muted);font-weight:500}
+.mdl .mgt.en{color:#2C7F8C;font-style:italic}
+.sw{white-space:pre-line}
+.ans{background:#fff;border:1px solid var(--line);border-radius:14px;padding:12px 16px;margin-bottom:10px;font-size:15px}
+.ans b{color:var(--teal)}
+.model{background:#fff;border-left:5px solid var(--teal);border-radius:14px;padding:14px 18px;font-size:15.5px;line-height:1.8}
+.teach li{margin:6px 0}
+</style>
+</head>
+<body>
+<nav class="nav"><div class="nav-in">
+  <a href="#huong-dan">Hướng dẫn</a>
+  <a href="#tim-hieu">Tìm hiểu</a>
+  <a href="#cac-truyen">28 truyện</a>
+  <a href="#thu-phap">Thủ pháp</a>
+  <a href="#tu-kiem-tra">Tự kiểm tra</a>
+  <a href="#dap-an">Đáp án</a>
+  <a href="#ghi-chu">Ghi chú GV</a>
+</div></nav>
+
+<header class="hero">
+  <div class="hero-in">
+    <div>
+      <div class="kicker">MYP Tiếng Việt · Unseen text: truyện cười</div>
+      <h1>Truyện cười dân gian</h1>
+      <div class="sub">Tiếng cười mua vui, châm biếm và khôn ngoan</div>
+      <p class="lead">Đọc văn bản, tìm thủ pháp gây cười, hiểu truyện đang châm biếm điều gì, rồi tự kiểm tra như trong phòng thi.</p>
+      <div class="emo">🐖 🐕 🐱 🐂 🐘 👓</div>
+    </div>
+    <div class="hstats">
+      <div class="hstat"><b>28</b><span>truyện (27 từ hai file + 1 bổ sung)</span></div>
+      <div class="hstat"><b>7</b><span>thủ pháp gây cười</span></div>
+      <div class="hstat"><b>4</b><span>phần bố cục: Mở – Thắt – Nút – Cười</span></div>
+      <div class="hstat"><b>✓</b><span>tự kiểm tra và đáp án</span></div>
+    </div>
+  </div>
+</header>
+
+<section class="sec" id="huong-dan">
+  <div class="kicker">Bước 1</div>
+  <h2>Cách học 4 bước</h2>
+  <div class="bar"></div>
+  <div class="grid4">
+    <div class="step" style="--c:var(--khai)"><div class="n">1</div><h4>Đọc to</h4><p>Đọc văn bản một lần để nghe nhịp kể và chỗ bất ngờ.<br><i class="gloss">Read it aloud once.</i></p></div>
+    <div class="step" style="--c:var(--thua)"><div class="n">2</div><h4>Tìm nút cười</h4><p>Tiếng cười nằm ở câu nào? Đó là phần Nút.<br><i class="gloss">Find the punchline.</i></p></div>
+    <div class="step" style="--c:var(--chuyen)"><div class="n">3</div><h4>Gọi tên thủ pháp</h4><p>Chọn 1–2 thủ pháp và chỉ ra dẫn chứng trong truyện.<br><i class="gloss">Name the device, cite the text.</i></p></div>
+    <div class="step" style="--c:var(--hop)"><div class="n">4</div><h4>Nói điều truyện châm biếm</h4><p>Truyện đang chế giễu ai, thói xấu nào?<br><i class="gloss">What vice is mocked?</i></p></div>
+  </div>
+  <div class="ghinho" style="margin-top:18px"><b class="t">★ CÔNG THỨC TRẢ LỜI (3 bước)</b>
+    <p>Chỉ ra (thủ pháp) → Phân tích (dẫn chứng + tác dụng gây cười) → Ý nghĩa (điều truyện châm biếm). <br><i class="gloss">Point → Analyse with evidence → Meaning.</i></p>
+  </div>
+</section>
+
+<section class="sec" id="tim-hieu">
+  <div class="kicker">Bước 2</div>
+  <h2>Truyện cười dân gian là gì?</h2>
+  <div class="bar"></div>
+  <div class="grid2">
+    <div class="card">
+      <h4 style="font-size:20px;margin-bottom:6px">Đặc điểm</h4>
+      <p class="def">Truyện ngắn dân gian, cốt truyện gọn, kết thúc bất ngờ. Truyện kể về thói xấu hay sự việc đời thường để gây cười, vừa mua vui vừa phê phán.</p>
+      <p class="gloss">A short folk tale with a tight plot and a surprising ending. It mocks vices and everyday situations, to entertain and to criticise.</p>
+      <h4 style="font-size:20px;margin:16px 0 6px">Tác giả</h4>
+      <p>Do nhân dân sáng tạo, truyền miệng qua nhiều thế hệ, nên không có tác giả cụ thể.</p>
+      <p class="gloss">Anonymous; created and passed on orally by the people.</p>
+    </div>
+    <div class="card">
+      <h4 style="font-size:20px;margin-bottom:6px">Nhân vật tiêu biểu</h4>
+      <div class="chips" style="margin-bottom:10px"><span>Trạng Quỳnh</span><span>Ba Giai – Tú Xuất</span><span>Trạng Lợn</span><span>Xiển Bột</span></div>
+      <p>Các nhân vật này thường dùng tiếng cười để châm biếm quan lại tham nhũng và thói hư tật xấu trong xã hội.</p>
+      <p class="gloss">Trạng Quỳnh, Ba Giai – Tú Xuất and others often use humour to satirise corrupt officials and social vices.</p>
+      <h4 style="font-size:20px;margin:16px 0 6px">Trong truyện có gì?</h4>
+      <p>Thường có một nhân vật bị cười (kẻ khoe khoang, ngốc giả, quan tham…) và một người khôn hơn, hoặc một tình huống tự phơi bày.</p>
+    </div>
+  </div>
+
+  <div class="lh"><b>A</b><span>Bố cục: Mở – Thắt – Nút – Cười</span></div>
+  <div class="flow">
+    <div class="fb khai tint-khai"><div class="ico">🎬</div><h4>Mở</h4><p>Giới thiệu tình huống và nhân vật.</p><span class="en">Setup</span></div>
+    <div class="fb thua tint-thua"><div class="ico">🔁</div><h4>Thắt</h4><p>Diễn biến: lặp lại, leo thang, đối đáp.</p><span class="en">Development</span></div>
+    <div class="fb chuyen tint-chuyen"><div class="ico">💥</div><h4>Nút</h4><p>Câu nói hoặc việc làm bất ngờ, đẩy truyện tới đỉnh.</p><span class="en">Punchline</span></div>
+    <div class="fb hop tint-hop"><div class="ico">😄</div><h4>Cười</h4><p>Tiếng cười kèm bài học hoặc sự châm biếm.</p><span class="en">Laughter &amp; message</span></div>
+  </div>
+  <div class="note" style="margin-top:14px">💡 <b>Chú ý:</b> Nhiều truyện có <b>ba lần lặp</b> (ví dụ “Treo biển”, “Mèo lại hoàn mèo”). Lặp lại là dấu hiệu để tìm phần Thắt và Nút.</div>
+</section>
+
+<section class="sec" id="thu-phap">
+  <div class="kicker">Bước 3</div>
+  <h2>Thủ pháp gây cười</h2>
+  <div class="bar"></div>
+  <table>
+    <thead><tr><th>Thủ pháp</th><th>Tác dụng</th><th>Dẫn chứng</th></tr></thead>
+    <tbody>
+      <tr><td><b>Chơi chữ</b> (đồng âm, nói lái)<span class="tbl-en">Wordplay (homophones, reversed syllables)</span></td><td>Tạo nghĩa kép, lật ngược nghĩa đen</td><td>Mầm đá (Đại phong → tương); Hai quan đấy!</td></tr>
+      <tr><td><b>Nghịch lý</b> (phi logic)<span class="tbl-en">Paradox / absurd logic</span></td><td>Lập luận có vẻ đúng nhưng vô lý; phơi bày sự ngu ngốc hay sai lầm</td><td>Mua kính; Quan lớn mua vàng; Bốn cẳng, sáu cẳng</td></tr>
+      <tr><td><b>Phóng đại</b><span class="tbl-en">Hyperbole</span></td><td>Làm thói xấu lộ rõ, buồn cười</td><td>Há miệng chờ sung; Có con giun đất!</td></tr>
+      <tr><td><b>Đối đáp</b><span class="tbl-en">Witty exchange</span></td><td>Một người khôn dồn đối phương vào bế tắc</td><td>Lợn cưới, áo mới; Mất trộm bò</td></tr>
+      <tr><td><b>Lặp cấu trúc</b><span class="tbl-en">Repetition / pattern</span></td><td>Tạo nhịp, dẫn đến cú bất ngờ</td><td>Treo biển (3 lần góp ý); Mèo lại hoàn mèo</td></tr>
+      <tr><td><b>Châm biếm / ẩn dụ</b><span class="tbl-en">Satire / allegory</span></td><td>Chê người khác một cách kín đáo</td><td>Bẩm chó cả; Cứ bảo tuổi sửu có được không?</td></tr>
+      <tr><td><b>Tục ngữ / thành ngữ</b><span class="tbl-en">Proverb / idiom</span></td><td>Đúc kết bài học, kết truyện gọn</td><td>“Mèo lại hoàn mèo”</td></tr>
+    </tbody>
+  </table>
+</section>
+<section class="sec" id="cac-truyen">
+  <div class="kicker">Bước 4 · Văn bản</div>
+  <h2>28 truyện cười</h2>
+  <div class="bar"></div>
+  <p>Chạm vào từng thẻ để xem <b>văn bản</b>, <b>tóm tắt tiếng Anh</b>, <b>bố cục</b>, <b>thủ pháp</b> và <b>giải thích</b>.</p>
+  <div class="fbar">
+    <button class="fbtn on" data-g="all">Tất cả</button>
+    <button class="fbtn" data-g="Thói xấu">Thói xấu</button>
+    <button class="fbtn" data-g="Xã hội &amp; quan lại">Xã hội &amp; quan lại</button>
+    <button class="fbtn" data-g="Chơi chữ">Chơi chữ</button>
+    <button class="fbtn" data-g="Mưu trí &amp; đối đáp">Mưu trí &amp; đối đáp</button>
+    <button class="fbtn" data-g="Ngốc nghếch &amp; nghịch lý">Ngốc nghếch &amp; nghịch lý</button>
+    <input id="q" type="search" placeholder="Tìm tên truyện, thủ pháp…" aria-label="Tìm truyện">
+    <span style="font-size:13px;color:var(--muted)"><b id="count">28</b> truyện</span>
+  </div>
+  <div class="pgrid" id="grid"></div>
+</section>
+
+<div class="mdl" id="mdl" aria-hidden="true">
+  <div class="mbox" role="dialog" aria-modal="true">
+    <button class="mx" id="mx" aria-label="Đóng">×</button>
+    <div id="mbody"></div>
+  </div>
+</div>
+<section class="sec" id="tu-kiem-tra">
+  <div class="kicker">Bước 5 · Luyện đề</div>
+  <h2>Tự kiểm tra</h2>
+  <div class="bar"></div>
+  <div class="namebox"><div>Họ và tên: ……………………………</div><div>Lớp: ……………………</div></div>
+  <p>Đọc lại truyện trước khi làm. Chọn đáp án ở Phần A, bấm vào để kiểm tra ngay. Phần B và C viết ra giấy hoặc vở, rồi đối chiếu với đáp án.</p>
+
+  <div class="qtype">Phần A · Trắc nghiệm <small>(9 câu, 1 điểm mỗi câu)</small></div>
+
+  <div class="q"><div class="qn">Câu 1 · Mèo lại hoàn mèo</div>
+    <p>Vì sao cuối cùng chủ nhà lại gọi con vật là “mèo”?</p>
+    <div class="opts">
+      <button data-ok="0">A. Vì ông thấy tên “Trời” khó gọi.</button>
+      <button data-ok="1">B. Vì mèo bắt được chuột, nên chuỗi vật khắc chế dừng lại ở “mèo”.</button>
+      <button data-ok="0">C. Vì khách đe dọa nếu không đổi tên.</button>
+    </div>
+    <div class="reveal">Mỗi vật khách đưa ra đều bị vật sau khắc chế. Mèo bắt được chuột, nên chuỗi kết thúc ở “mèo”.</div>
+  </div>
+
+  <div class="q"><div class="qn">Câu 2 · Mầm đá</div>
+    <p>Vì sao Quỳnh ghi hai chữ “Đại phong” lên lọ tương?</p>
+    <div class="opts">
+      <button data-ok="0">A. Để quảng cáo món tương ngon.</button>
+      <button data-ok="1">B. Để chúa hỏi, rồi Quỳnh giải thích bằng chuỗi nói lái và đồng âm.</button>
+      <button data-ok="0">C. Vì “Đại phong” là tên món mầm đá.</button>
+    </div>
+    <div class="reveal">Hai chữ trên lọ là đầu mối để Quỳnh dựng nên một trò đùa dựa trên chơi chữ.</div>
+  </div>
+
+  <div class="q"><div class="qn">Câu 3 · Mất trộm bò</div>
+    <p>Vì sao anh nông dân kết luận quan thông đồng với kẻ trộm?</p>
+    <div class="opts">
+      <button data-ok="0">A. Vì quan không chịu xử kiện.</button>
+      <button data-ok="1">B. Vì quan giải thích cách trộm rất tường tận, như người trong cuộc.</button>
+      <button data-ok="0">C. Vì quan đòi tiền anh ta.</button>
+    </div>
+    <div class="reveal">Anh nông dân dùng chính lời giải thích của quan để bắt bẻ: quan phải biết rõ cách trộm thì mới nói được như vậy.</div>
+  </div>
+
+  <div class="q"><div class="qn">Câu 4 · Há miệng chờ sung</div>
+    <p>Tiếng cười trong truyện nhắm vào điều gì?</p>
+    <div class="opts">
+      <button data-ok="0">A. Sự khéo léo của chàng trai.</button>
+      <button data-ok="1">B. Thói lười biếng, rồi lại trách người khác lười.</button>
+      <button data-ok="0">C. Sự khó khăn khi hái sung.</button>
+    </div>
+    <div class="reveal">Chàng lười vừa lười vừa trách người khác lười: đó là nghịch lý và sự châm biếm.</div>
+  </div>
+
+  <div class="q"><div class="qn">Câu 5 · Bốn cẳng, sáu cẳng</div>
+    <p>Thủ pháp chính tạo ra tiếng cười trong truyện là gì?</p>
+    <div class="opts">
+      <button data-ok="0">A. Nói ngược và mắng khéo.</button>
+      <button data-ok="1">B. Lập luận theo nghĩa đen, dẫn đến phi lý.</button>
+      <button data-ok="0">C. Phóng đại hình dáng con ngựa.</button>
+    </div>
+    <div class="reveal">Anh lính đếm chân theo nghĩa đen: ngựa không người cưỡi có bốn chân, nên “bốn cẳng nhanh hơn sáu cẳng”.</div>
+  </div>
+
+  <div class="q"><div class="qn">Câu 6 · Lợn cưới, áo mới</div>
+    <p>Điểm chung của hai nhân vật trong truyện là gì?</p>
+    <div class="opts">
+      <button data-ok="0">A. Đều lười biếng.</button>
+      <button data-ok="1">B. Đều thích khoe khoang.</button>
+      <button data-ok="0">C. Đều ngốc nghếch.</button>
+    </div>
+    <div class="reveal">Người thứ nhất đứng đợi khen áo, người thứ hai vén áo để khoe. Câu hỏi về con lợn chỉ là cái cớ.</div>
+  </div>
+
+  <div class="q"><div class="qn">Câu 7 · Quan lớn mua vàng</div>
+    <p>Nguồn gốc tiếng cười của truyện là gì?</p>
+    <div class="opts">
+      <button data-ok="1">A. Quan lợi dụng đặc quyền và đưa ra lập luận sai nhưng rất ngang nhiên.</button>
+      <button data-ok="0">B. Chủ hiệu vàng quá ngốc nghếch.</button>
+      <button data-ok="0">C. Vàng mua về bị giả.</button>
+    </div>
+    <div class="reveal">Quan đòi trả nửa giá bằng cách lấy một lạng và trả lại một lạng. Lập luận sai, nhưng quan vẫn tự tin.</div>
+  </div>
+
+  <div class="q"><div class="qn">Câu 8 · Đào trường thọ</div>
+    <p>Vì sao Quỳnh đề nghị đổi tên “đào trường thọ” thành “đoản thọ”?</p>
+    <div class="opts">
+      <button data-ok="0">A. Vì quả đào không ngon.</button>
+      <button data-ok="1">B. Vì nếu ăn đào “trường thọ” thì chết ngay, và để trừ kẻ xu nịnh dâng đào.</button>
+      <button data-ok="0">C. Vì vua muốn đổi tên quả đào.</button>
+    </div>
+    <div class="reveal">Quỳnh dùng lời nịnh để trả đũa: nuốt chưa xong đã chết, nên tên phải là “đoản thọ”, và người dâng đào đáng bị trị.</div>
+  </div>
+
+  <div class="q"><div class="qn">Câu 9 · Ăn trộm mèo</div>
+    <p>Quỳnh chứng minh mình không ăn trộm mèo bằng cách nào?</p>
+    <div class="opts">
+      <button data-ok="0">A. Đưa giấy tờ mua mèo.</button>
+      <button data-ok="1">B. Cho vua thử: mèo chọn bát cơm rau, Quỳnh lập luận mèo theo nếp nhà chủ.</button>
+      <button data-ok="0">C. Nhờ người làm chứng đã thấy mèo nhà mình từ trước.</button>
+    </div>
+    <div class="reveal">Thói quen ăn cơm rau do chính Quỳnh huấn luyện trở thành bằng chứng rằng mèo thuộc về nhà nghèo của anh ta.</div>
+  </div>
+
+  <div class="qtype">Phần B · Trả lời ngắn <small>(4 câu, mỗi câu 3–5 dòng; dùng công thức Chỉ ra – Phân tích – Ý nghĩa)</small></div>
+
+  <div class="q"><div class="qn">Câu 10 · Treo biển</div>
+    <p>Chủ cửa hàng đã làm gì sau mỗi lần có người góp ý? Vì sao cuối cùng ông bỏ hẳn cái biển?</p>
+    <div class="blank"></div><div class="blank"></div><div class="blank"></div>
+  </div>
+
+  <div class="q"><div class="qn">Câu 11 · Hai quan đấy!</div>
+    <p>Chỉ ra cách cậu bé chơi chữ với cụm từ “hai quan” và nêu tác dụng.</p>
+    <div class="blank"></div><div class="blank"></div><div class="blank"></div>
+  </div>
+
+  <div class="q"><div class="qn">Câu 12 · Cứ bảo tuổi sửu có được không?</div>
+    <p>Nêu một chi tiết phóng đại trong truyện và cho biết tác dụng của nó.</p>
+    <div class="blank"></div><div class="blank"></div><div class="blank"></div>
+  </div>
+
+  <div class="q"><div class="qn">Câu 13 · Sao đã vội chết?</div>
+    <p>Vì sao có thể nói ông lang “nói ngược”? Truyện gửi gắm thông điệp gì?</p>
+    <div class="blank"></div><div class="blank"></div><div class="blank"></div>
+  </div>
+
+  <div class="qtype">Phần C · Viết đoạn văn <small>(150–200 chữ)</small></div>
+  <div class="q"><div class="qn">Câu 14 · Phân tích tiếng cười châm biếm</div>
+    <p>Chọn một truyện: <b>Có con giun đất!</b>, <b>Bẩm chó cả</b> hoặc <b>Quan lớn mua vàng</b>. Viết đoạn văn phân tích tiếng cười châm biếm theo ba bước: <i>Chỉ ra</i> (tên truyện, thủ pháp) → <i>Phân tích</i> (dẫn chứng và tác dụng gây cười) → <i>Ý nghĩa</i> (điều truyện châm biếm). Dùng ít nhất một thủ pháp và một dẫn chứng trực tiếp từ văn bản.</p>
+    <div class="blank"></div><div class="blank"></div><div class="blank"></div><div class="blank"></div><div class="blank"></div><div class="blank"></div>
+  </div>
+</section>
+
+<section class="sec" id="dap-an">
+  <div class="kicker">Đáp án</div>
+  <h2>Gợi ý đáp án</h2>
+  <div class="bar"></div>
+
+  <div class="lh"><b>A</b><span>Trắc nghiệm</span></div>
+  <div class="ans"><b>Câu 1:</b> B. Mỗi vật bị vật sau khắc chế; mèo bắt chuột nên chuỗi dừng ở mèo.</div>
+  <div class="ans"><b>Câu 2:</b> B. Hai chữ là đầu mối cho trò chơi chữ nói lái và đồng âm.</div>
+  <div class="ans"><b>Câu 3:</b> B. Lời giải thích của quan cho thấy quan biết rõ cách trộm.</div>
+  <div class="ans"><b>Câu 4:</b> B. Thói lười biếng và nghịch lý trách người khác lười.</div>
+  <div class="ans"><b>Câu 5:</b> B. Lập luận theo nghĩa đen dẫn đến phi lý.</div>
+  <div class="ans"><b>Câu 6:</b> B. Đều thích khoe khoang.</div>
+  <div class="ans"><b>Câu 7:</b> A. Đặc quyền bị lợi dụng bằng lập luận sai nhưng ngang nhiên.</div>
+  <div class="ans"><b>Câu 8:</b> B. Ăn đào “trường thọ” thì chết ngay, nên phải gọi là “đoản thọ”; đồng thời trừ kẻ xu nịnh.</div>
+  <div class="ans"><b>Câu 9:</b> B. Mèo chọn bát cơm rau, theo nếp nhà chủ nghèo; đó là bằng chứng Quỳnh nói đúng.</div>
+
+  <div class="lh"><b>B</b><span>Trả lời ngắn (gợi ý)</span></div>
+  <div class="ans"><b>Câu 10:</b> Mỗi lần có người chê, chủ hàng xóa một chữ hoặc một cụm từ (“tươi”, “ở đây”, “có bán”), cuối cùng chỉ còn chữ “cá”. Ba lần lặp tạo nhịp cho truyện. Khi người láng giềng hỏi “đề biển làm gì?”, chủ hàng bỏ hẳn biển. Truyện châm biếm những người bắt bẻ vặt và sự nghe theo máy móc.</div>
+  <div class="ans"><b>Câu 11:</b> “Hai quan” vừa là lời chào quan, vừa được hiểu là “chó hai quan”. Cậu bé dùng đồng âm để đẩy quan vào thế bị so với con chó, nên quan không bắt bẻ được. Tác dụng: châm biếm thói nịnh bợ, tạo tiếng cười bất ngờ.</div>
+  <div class="ans"><b>Câu 12:</b> Chi tiết dân làng đúc một con chuột cống thật to bằng bạc, ruột đặc. Phóng đại làm rõ sự hối lộ vụng về, đối lập với danh tiếng “thanh liêm” của quan.</div>
+  <div class="ans"><b>Câu 13:</b> Ông lang đổ lỗi ngược cho gia đình: cháu chết vì uống chưa đủ một năm, nên không nhận trách nhiệm. Thông điệp: đừng tin lời khoe chữa bệnh; cần tỉnh táo và có trách nhiệm.</div>
+
+  <div class="lh"><b>C</b><span>Đoạn văn mẫu (Có con giun đất!)</span></div>
+  <div class="model">Truyện <i>Có con giun đất!</i> châm biếm thói nịnh bợ cấp trên. Ở lần đầu, người lính của quan tuần gọi hạt cơm dính râu chủ là “hòn ngọc minh châu”, và quan vẫn thản nhiên để hạt cơm rơi xuống. Lần sau, người lính của quan án học theo nhưng làm vụng về, gọi sợi bún trên mép chủ là “con giun đất”. Sự đối lập giữa “ngọc minh châu” quý giá và “con giun đất” bẩn thỉu tạo tiếng cười mạnh. Qua đó, truyện mỉa mai lối nịnh bợ thiếu hiểu biết và nhắc người đọc tỉnh táo trước những lời khen quá đà.</div>
+  <p class="gloss">Model: Point (the flattering servants) → Analyse (hyperbole, contrast, repetition) → Meaning (satire on flattery).</p>
+</section>
+
+<section class="sec" id="ghi-chu">
+  <div class="kicker">Dành cho giáo viên</div>
+  <h2>Ghi chú</h2>
+  <div class="bar"></div>
+  <ul class="teach">
+    <li><b>Nguồn văn bản:</b> truyện 1–14 và 16–28 lấy từ hai file cô gửi. Truyện 15 (Thầy bói xem voi) là bổ sung, kể lại theo ý; nên đối chiếu trước khi dùng.</li>
+    <li><b>Tiếng Anh:</b> phần tóm tắt tiếng Anh do mình viết để hỗ trợ đọc hiểu, không phải bản dịch chính thức.</li>
+    <li><b>Nhạy cảm:</b> “Sao đã vội chết?” có chi tiết cái chết. Nên dạy như châm biếm lang băm, không cười người đang đau buồn.</li>
+    <li><b>Luyện đề:</b> với đề unseen, học sinh áp dụng 4 bước và công thức 3 bước, không học thuộc. Nên luyện thêm bằng các truyện chưa có trong trang này.</li>
+    <li><b>Phạm vi:</b> trang không đưa truyện có chi tiết bài tiết hay nội dung thô tục, để phù hợp với bài kiểm tra ở trường.</li>
+  </ul>
+</section>
+
+<footer>
+  <span>Truyện cười dân gian · Ôn tập MYP Tiếng Việt</span>
+  <span>Tóm tắt tiếng Anh và tự kiểm tra do giáo viên sử dụng cùng học sinh</span>
+</footer>
+<script>
+var STORIES=[
+{id:1,n:"Truyện 1",t:"Lợn cưới, áo mới",g:"Thói xấu",ic:"🐖",
+tom:"Hai anh chàng hay khoe: người đứng đợi khen áo, người kia trả lời bằng cách vén vạt áo.",
+en:"A vain man waits at his door in a new shirt, hoping for compliments. Another vain man runs up asking if he saw his runaway wedding pig. He lifts his shirt and says that since he put on the new shirt, he has seen no pig at all.",
+vi:["Có anh tính hay khoe của. Một hôm, may được cái áo mới, liền đem ra mặc, rồi đứng hóng ở cửa, đợi có ai đi qua người ta khen.","Đứng mãi từ sáng đến chiều chả thấy ai hỏi cả, anh ta tức lắm.","Đang tức tối, chợt thấy một anh, tính cũng hay khoe, tất tưởi chạy đến hỏi to:","– Bác có thấy con lợn cưới của tôi chạy qua đây không?","Anh kia liền giơ ngay vạt áo ra, bảo:","– Từ lúc tôi mặc cái áo mới này, tôi chẳng thấy con lợn nào chạy qua đây cả!"],
+st:["Mở: anh khoe áo và đứng đợi khen.","Thắt: không ai khen; anh kia cũng hay khoe, hỏi về con lợn.","Nút: anh kia vén áo để khoe, trả lời lạc đề."],
+bp:["Đối đáp bất ngờ","Châm biếm thói khoe khoang","Chơi chữ (lợn cưới / áo mới)"],
+gt:"Cả hai nhân vật đều khoe khoang, nên câu hỏi về con lợn chỉ là cái cớ. Người kia trả lời lạc đề có chủ ý để khoe áo mới của mình. Tiếng cười đến từ việc người đọc thấy rõ thói xấu của cả hai, được phơi bày nhẹ nhàng mà sắc sảo."},
+{id:2,n:"Truyện 2",t:"Treo biển",g:"Xã hội & quan lại",ic:"🐟",
+tom:"Cửa hàng cá bị góp ý mãi, xóa dần từng chữ trên biển; cuối cùng bỏ luôn cả biển.",
+en:"A fish shop puts up a sign reading “Fresh fish sold here”. Each passer-by criticises one word, so the owner deletes it, until only the word “fish” is left. In the end a neighbour points out that everyone knows it is a fish shop, so the sign is taken down.",
+vi:["Ở một cửa hàng bán cá làm cái biển, đề mấy chữ to tướng: “Ở đây có bán cá tươi”.","Vừa treo biển lên, có người qua đường xem, cười bảo: – Nhà này xưa nay quen bán cá ươn hay sao mà bây giờ lại phải đề biển là “bán cá tươi”? Chủ cửa hàng nghe nói thế, xóa ngay chữ “tươi” đi.","Hôm sau, có người khác đến mua cá, cũng nhìn lên biển, cười bảo: – Người ta chẳng nhẽ đến hàng hoa mua cá hay sao mà phải đề là “ở đây”! Chủ cửa hàng nghe nói, bỏ ngay hai chữ “ở đây” đi.","Cách vài hôm lại có một người khác đến mua cá, cũng nhìn lên biển, cười bảo: – Ở đây chẳng bán cá thì bầy cá ra để khoe hay sao mà phải đề là “có bán”? Chủ cửa hàng nghe nói, lại bỏ ngay hai chữ “có bán” đi. Thành ra treo trên biển chỉ còn mỗi một chữ “cá”.","Vài hôm sau, người láng giềng sang chơi, nhìn lên biển, nói: – Ôi dào, chưa đi đến đầu phố đã ngửi thấy mùi tanh. Đến gần nhà thấy đầy những cá, ai chẳng biết là bán cá mà còn phải đề biển làm gì?","Thế là nhà hàng cất luôn nốt cái biển đi."],
+st:["Mở: biển “Ở đây có bán cá tươi”.","Thắt: ba lần góp ý, mỗi lần bỏ thêm một cụm từ.","Nút: người láng giềng hỏi “đề biển làm gì?”, và chủ hàng bỏ luôn cái biển."],
+bp:["Lặp cấu trúc (ba lần góp ý)","Phóng đại (cuối cùng chỉ còn một chữ)","Nghịch lý (đã biết thì cần biển làm gì?)"],
+gt:"Chủ hàng nghe lời từng người mà không nghĩ đến mục đích của cái biển, nên cứ xóa đi mãi. Truyện châm biếm những người thích bắt bẻ vặt và cả sự vâng theo một cách máy móc. Đến cuối, lập luận của người láng giềng đẩy mọi thứ đến chỗ vô lý, và cái biển bị bỏ hẳn."},
+{id:3,n:"Truyện 3",t:"Mua kính",g:"Thói xấu",ic:"👓",
+tom:"Anh dốt chữ đi mua kính cho giống người có học, chê hết kính; lộ ra vì cầm lịch ngược.",
+en:"An illiterate man buys glasses to look like the learned old men. He rejects pair after pair, and the shopkeeper notices he is holding the calendar upside down. Asked whether he can read, he answers that if he could read, he would not need glasses.",
+vi:["Anh nọ dốt đặc cán mai, thấy các ông già bà cả mang kính xem sách, bắt chước ra chợ hỏi mua một đôi.","Vào hiệu, bảo chủ hiệu lấy ra cho anh ta chọn. Anh ta đeo kính vào, lấy cuốn lịch đem theo ra xem, xem xong lại bảo chủ hiệu cho chọn đôi khác. Chủ hiệu chiều ý, chọn cho anh ta năm sáu đôi, nhưng đôi nào anh ta cũng không ưng ý.","Chủ hiệu bèn chọn một đôi tốt nhất trong hiệu đưa ra. Anh ta đeo vào, lại lấy cuốn lịch ra xem, vẫn lắc đầu chê xấu. Chủ hiệu lấy làm lạ, liếc thấy anh ta cầm cuốn lịch ngược mà xem, sinh nghi, liền hỏi:","– Sao đôi nào ông cũng chê xấu cả?","Anh ta đáp: – Xấu thì bảo xấu chứ sao! Kính tốt thì tôi đã xem chữ được rồi!","Chủ hiệu nói: – Hay là ông không biết chữ?","Anh ta đáp: – Biết chữ thì đã không cần mua kính!"],
+st:["Mở: anh dốt muốn đeo kính giống các ông già.","Thắt: chê năm sáu đôi; chủ hiệu liếc thấy cuốn lịch cầm ngược.","Nút: “Biết chữ thì đã không cần mua kính!”"],
+bp:["Nghịch lý (tự mâu thuẫn)","Đối đáp","Châm biếm sự giả vờ hiểu biết"],
+gt:"Anh ta tưởng đeo kính là có học. Câu đáp cuối cùng nghe rất đắc ý nhưng lại là một nghịch lý: không biết chữ mới phải mua kính, nên anh ta vừa tự bào chữa vừa tự lộ sự dốt. Tiếng cười đả kích thói giả vờ biết."},
+{id:4,n:"Truyện 4",t:"Hai quan đấy!",g:"Xã hội & quan lại",ic:"🐕",
+tom:"Viên quan bắt dân chào “Lạy hai quan”; cậu bé chơi chữ bằng câu “Hai quan đấy!” và con chó.",
+en:"An official orders everyone to greet him and his wife with “Two officials!”. A boy carrying a dog shouts “Two officials!” as they pass. When the official scolds him, the boy points at the dog and says it is a dog of two officials, worth two officials.",
+vi:["Lão quan nọ có tính nịnh vợ. Lão ra lệnh hễ ai gặp cũng phải chào: “Lạy hai quan ạ!”.","Có chú bé giả vờ hoàn toàn chẳng hay gì về cái lệnh ấy. Thấy vợ quan đi cạnh quan, chú bế chó, đi sát vào.","Gặp ai đi qua, chú gào to: – Hai quan đấy!","Quan thấy chú bé có ý xỏ mình, quát: – Mày dám láo hử?","Chú chỉ vào chó: – Dạ bẩm, chó hai quan, chó đáng giá hai quan, thật đấy ạ!"],
+st:["Mở: lệnh bắt dân chào “Lạy hai quan”.","Thắt: cậu bé bế chó đi cạnh vợ quan và hô “Hai quan đấy!”.","Nút: “chó hai quan, chó đáng giá hai quan”."],
+bp:["Chơi chữ (đồng âm “hai quan”)","Châm biếm thói nịnh bợ","Đối đáp: lấy lời quan để đáp lại quan"],
+gt:"Cậu bé giữ vẻ ngây thơ, nhưng thực ra đang châm chọc. “Hai quan” vừa là lời chào vừa được hiểu thành “chó hai quan”, nên quan bị so ngầm với con chó. Quan không bắt bẻ được vì cậu chỉ nói đúng theo chính lệnh của quan."},
+{id:5,n:"Truyện 5",t:"Mầm đá",g:"Chơi chữ",ic:"🪨",
+tom:"Trạng Quỳnh lừa chúa Trịnh bằng món “mầm đá” không có thật; chúa đói, ăn tương và phải chịu thua.",
+en:"Trạng Quỳnh tells Lord Trịnh about a delicious dish called “stone sprouts”, which does not exist. He keeps the Lord waiting until the Lord is hungry, then serves soy sauce and salt. The jar is labelled “Đại phong” and Quỳnh explains the wordplay. The Lord admits that hunger makes anything taste good.",
+vi:["Chúa Trịnh quanh năm ăn toàn sơn hào, hải vị, chả thiếu thức gì, mà vẫn không thấy ngon miệng.", "Một hôm, Quỳnh túc trực, Chúa bảo: – Ta ăn đủ của thơm vật lạ, mà không biết ngon. Ngươi có biết thứ gì ngon thì nói cho ta hay?", "– Tâu Chúa, Chúa đã dùng món ăn mầm đá chưa ạ?", "– Vị ấy ngon lắm à?", "– Dạ, ngon lắm.", "– Thật như thế thì làm để ta nếm thử xem?", "Quỳnh sai người lập tức đi lấy “mầm đá” về ninh nhừ để làm đồ ngự thực, còn mình thì lủi về nhà lấy một lọ tương ngon, một đĩa muối trắng. Lọ tương thì bịt thật kỹ, ngoài đề hai chữ “Đại phong”, đem sang giấu một chỗ.", "Chúa đợi lâu, thấy đói bụng, hỏi: – Mầm đá đã chín chưa? Quỳnh thưa: – Chưa được.", "Chốc chốc, Chúa lại hỏi, Quỳnh tâu: – Thứ ấy phải cho thật chín, không thì lâu tiêu. Khuya, Chúa lại hỏi. Quỳnh biết Chúa đói lắm rồi, mới tâu: – Xin Chúa hãy xơi tạm vài thứ dã vị này, còn mầm đá xin dâng sau.", "Rồi truyền dọn cơm tương với muối dâng lên. Chúa đang đói, ăn ngon miệng. Trông thấy lọ đề hai chữ “Đại phong” lấy làm lạ. Chúa hỏi: – Mắm “Đại phong” là mắm gì mà ngon thế?", "– Bẩm, đó là thức ăn thường dùng. – Là gì, nói lên cho ta biết? – Bẩm, tương ạ! – Ngươi đề hai chữ “Đại phong” là nghĩa là sao? – Bẩm “Đại phong” là gió lớn, gió lớn thì đổ chùa, đổ chùa là tượng lo, tượng lo là lọ tương.", "– Lâu nay ta không ăn, quên mất cả vị, sao ngon thế? – Tâu Chúa, quả không sai. Lúc đói thì ăn gì cũng ngon, no thì không thấy gì vừa miệng!", "Chúa cười bảo: – Ngươi nói phải. Thế ra ngươi làm cho ta thật đói để ăn cho biết ngon, chứ đợi món ăn mầm đá thì biết đến bao giờ cho chín!"],
+st:["Mở: chúa Trịnh chán ăn, muốn thử món lạ.","Thắt: Quỳnh bắt chúa chờ “mầm đá” chín, chúa đói dần.","Nút: chúa ăn tương và hỏi “Đại phong”; Quỳnh giải thích bằng chuỗi nói lái, rồi chúa nhận ra mình đã bị đùa."],
+bp:["Chơi chữ (đồng âm, nói lái: Đại phong → gió lớn → đổ chùa → tượng lo → lọ tương)","Mưu trí","Châm biếm (chúa bị đùa)"],
+gt:"Quỳnh dùng cái đói của chúa để món tương trở nên ngon, và rồi dùng chuỗi liên tưởng âm để giải thích “Đại phong” một cách vừa khéo vừa buồn cười. Câu nói “lúc đói thì ăn gì cũng ngon” đúc kết một điều đúng với đời sống. Tiếng cười vừa vui vừa có chút châm biếm kẻ quyền thế."},
+{id:6,n:"Truyện 6",t:"Há miệng chờ sung",g:"Thói xấu",ic:"🌳",
+tom:"Chàng lười nằm há miệng chờ sung rụng; nhờ người khác nhặt hộ, người kia lại còn lười hơn.",
+en:"A lazy young man lies under a fig tree with his mouth open, waiting for figs to fall in. He asks a passer-by to put them in his mouth. The passer-by is equally lazy and uses his toes to pick the figs up. The lazy man complains that the other person is lazy.",
+vi:["Xưa có một chàng mồ côi cha mẹ nhưng chẳng chịu học hành, làm lụng gì cả. Hàng ngày anh ta cứ nằm ngửa dưới gốc cây sung, há miệng thật to, chờ cho sung rụng vào thì ăn.","Nhưng đợi mãi mà chẳng qua sung nào rơi trúng miệng. Bao nhiêu quả đều rơi chệch ra ngoài.","Chợt có người đi qua đường, chàng lười gọi lại, nhờ nhặt sung bỏ hộ vào miệng. Không may, gặp phải một tay cũng lười. Hắn lấy hai ngón chân cặp quả sung, bỏ vào miệng cho chàng lười.","Anh chàng bực lắm, gắt: – Ôi chao! Người đâu mà lười thế!"],
+st:["Mở: chàng lười nằm há miệng dưới gốc sung.","Thắt: sung rơi chệch; nhờ người khác, người đó cũng lười.","Nút: người lười đi nhờ lại trách người khác lười."],
+bp:["Phóng đại (dùng ngón chân nhặt sung)","Nghịch lý (lười mà còn trách người lười)","Châm biếm thói lười biếng"],
+gt:"Chàng lười muốn ăn mà không chịu làm, rồi lại trách người khác lười. Hình ảnh ngón chân cặp sung là chi tiết phóng đại đầy hài hước. Truyện mỉa mai rằng người lười thì không bao giờ có sung ăn."},
+{id:7,n:"Truyện 7",t:"Mèo lại hoàn mèo",g:"Mưu trí & đối đáp",ic:"🐱",
+tom:"Chủ nhà đặt tên mèo là “Trời”; khách dồn bằng mây, gió, thành, chuột; cuối cùng vẫn gọi là mèo.",
+en:"A man names his cat “Heaven”, since nothing is greater. A guest challenges each name: clouds can hide heaven, wind drives clouds, a wall stops wind, rats dig through walls, and cats catch rats. In the end the owner calls it a cat again, and the guest says this is the proverb “the cat returns to being a cat”.",
+vi:["Ngày xưa có một người nuôi một con mèo. Nghĩ con mèo của mình khôn ngoan, tài giỏi không có loài nào hơn nữa, mới đặt tên cho nó là “Trời”.","Một hôm, có một ông khách đến chơi, thấy sự lạ mới hỏi rằng: – Sao ông lại dám gọi nó là con “Trời”? Chủ nhà đáp: – Con mèo của tôi quý hóa có một không hai. Gọi nó là con mèo thì không được. Phải gọi là con “Trời” mới xứng đáng, vì không ai hơn được “Trời”.","Ông khách hỏi: – Thế mây chẳng che được trời là gì? Chủ nhà bảo: – Thế thì tôi gọi nó là con Mây. Khách lại hỏi: – Thế nhưng gió lại đuổi được mây! – Thế thì gọi nó là con Gió. – Thế nhưng thành lại cản được gió! – Thế thì tôi gọi nó là con Thành. – Thế nhưng chuột lại khoét được thành! – Thì tôi gọi nó là con Chuột. – Thế nhưng mèo lại bắt được chuột!","Chủ nhà nghĩ ngợi rồi bảo: – Thì tôi lại cứ gọi nó là con Mèo như hôm trước vậy.","Ông khách vỗ tay cười: – Thế có phải là: “Mèo lại hoàn mèo” như câu tục ngữ ta vẫn thường nói không?"],
+st:["Mở: chủ nhà đặt tên mèo là “Trời”.","Thắt: khách đưa ra vật khắc chế lần lượt: mây, gió, thành, chuột.","Nút: mèo bắt được chuột, nên cuối cùng lại là “mèo”. Câu tục ngữ “Mèo lại hoàn mèo” được nhắc đến."],
+bp:["Lặp cấu trúc đối đáp (năm lần)","Chuỗi lập luận dồn ép","Tục ngữ"],
+gt:"Mỗi lần khách hỏi, chủ nhà lại đổi tên con vật theo vật khắc chế nó, cho đến khi quay về chính tên ban đầu. Tiếng cười đến từ sự khoe khoang bị bác bỏ bằng lập luận đơn giản. Câu tục ngữ “mèo lại hoàn mèo” nghĩa là mọi việc quay về chỗ cũ, và truyện dùng nó làm câu kết."},
+{id:8,n:"Truyện 8",t:"Bẩm chó cả",g:"Xã hội & quan lại",ic:"🍲",
+tom:"Nhà nho khinh quan tham, mời quan ăn; khi các quan khen ngon, ông bảo tất cả đều là chó.",
+en:"A scholar despises corrupt officials. He invites them to a simple feast. They enjoy the food and ask what each dish is. He answers that this is dog, and that is dog too, all dog.",
+vi:["Nhà nọ thấy quan lại tham nhũng, trong lòng rất khinh. Một hôm, các quan đến nhà chơi, trong số đó có cả mấy bạn đồng song thuở trước. Ông ta bảo người nhà dọn rượu thết.","Người nhà bưng mâm lên, ông ta đứng dậy thưa: – Chả mấy khi rồng đến nhà tôm, các ngài có bụng yêu nhà nho thanh bạch đến chơi, có chén rượu nhạt xin các ngài chiếu cố cho.","Các quan cầm đũa, bấp mấy món. Các quan ăn thấy ngon miệng, liền khề khà hỏi: đây đĩa gì, kia bát gì…","Nhà nho thong thả nói: – Đây là chó, kia cũng là chó, bẩm toàn chó cả."],
+st:["Mở: nhà nho khinh quan tham.","Thắt: mời rượu và cỗ; các quan ăn ngon miệng và hỏi tên món.","Nút: “Đây là chó, kia cũng là chó, bẩm toàn chó cả.”"],
+bp:["Ẩn dụ châm biếm (chó = kẻ đáng khinh)","Nói ngược, mắng khéo","Nghịch lý (các quan ăn chó mà vui)"],
+gt:"Chữ “chó” vừa là món ăn, vừa là lời mắng ngầm: các quan đang ăn chó và cũng chính là những kẻ như vậy. Nhà nho không nói thẳng mà vẫn mắng được, đó là cách châm biếm kín đáo nhưng sắc sảo."},
+{id:9,n:"Truyện 9",t:"Mất trộm bò",g:"Mưu trí & đối đáp",ic:"🐂",
+tom:"Dù đã chốt chuồng và nằm chắn cửa, anh nông dân vẫn mất bò; anh kiện quan và bắt bẻ lập luận của quan.",
+en:"A farmer locks his cow in the pen and sleeps across the doorway on a bed, yet the cow is stolen. He reports to the magistrate that the thieves must have crawled under his bed. The magistrate laughs, but then says the thieves must have lifted the bed aside. The farmer concludes that the magistrate must be in league with the thieves, because he knows exactly how they did it.",
+vi:["Một người vừa mới tậu được con bò. Tối đi ngủ, anh ta đã chốt chuồng bò cẩn thận rồi lại đặt cái chõng ngay giữa lối ra vào mà nằm ngủ. Ấy thế mà ban đêm, kẻ trộm vẫn vào dắt mất bò của anh ta. Xót ruột, anh ta trình quan:","– Bẩm quan, chắc là chúng nó dắt bò chui qua chõng con nằm mà đi ra.","Quan nghe nói vô lý quả bật cười: – Con bò chứ có phải con chó, con mèo đâu mà chui qua gầm chõng!","– Dạ, bẩm quan, thế thì chúng nó dắt bò của con đi lối nào? Sáng dậy cái chõng con nằm vẫn để y nguyên ở chỗ cũ chắn lối ra vào kia mà!","– Đồ ngốc! Mày ngủ say, chúng nó khiêng chõng mày nằm ra một bên, dắt bò ra rồi lại khiêng về chỗ cũ…","Người kia như vỡ lẽ, nói: – À, thế ra quan thông đồng với bọn trộm, nên mới tỏ tường được như thế chứ!"],
+st:["Mở: mất bò dù đã chốt chuồng và nằm chắn cửa.","Thắt: anh kiện, quan cười rồi đưa ra cách trộm vô lý.","Nút: anh nông dân kết luận quan thông đồng với kẻ trộm."],
+bp:["Đối đáp dồn ép","Nghịch lý (lập luận vô lý của quan)","Châm biếm việc xét xử cẩu thả"],
+gt:"Quan và người nông dân đều đưa ra lập luận khó tin. Người nông dân không cãi trực tiếp mà dùng chính lời quan để bắt bẻ: nếu khiêng chõng được, quan phải biết rõ cách trộm, và như vậy quan có thể đồng lõa. Tiếng cười châm biếm sự xét xử thiếu cẩn trọng."},
+{id:10,n:"Truyện 10",t:"Cứ bảo tuổi sửu có được không?",g:"Xã hội & quan lại",ic:"🐭",
+tom:"Quan huyện thanh liêm không nhận lễ; dân nhờ bà huyện, đúc chuột bạc và nói “tuổi Tí”; quan trách vợ.",
+en:"A magistrate known for his honesty refuses bribes, so his wife refuses gifts too. The villagers ask her for help and make a solid silver rat, which she says fits the magistrate’s zodiac sign, the Rat. The magistrate scolds her: why not simply say he is an Ox?",
+vi:["Đồn rằng có một ông quan huyện rất thanh liêm, không ăn của đút bao giờ. Bà huyện thấy tính chồng như vậy cũng không dám nhận lễ của ai. Có làng nọ muốn nhờ quan huyện bênh cho được kiện, nhưng mang lễ vật gì đến, quan cũng gạt đi hết. Họ mới tìm cách đút lót với bà huyện. Bà huyện cũng chối đây đẩy:","– Nhà tôi thanh liêm lắm, tôi mà nhận của các ông thì mươi, mười lăm năm sau, ông ấy biết ông ấy cũng vẫn còn rầy la tôi cơ đấy! Dân làng năn nỉ mãi, bà nể tình mới bày cách: – Quan huyện nhà tôi tuổi “tí”. Dân làng đã có ý như vậy, thì hãy về đúc một con chuột bạc đến đây, rồi tôi cố nói giùm cho, họa may được chăng!","Dân làng nghe lời, về đúc một con chuột cống thật to, ruột đặc, toàn bằng bạc đem đến.","Một hôm, ông huyện trông thấy con chuột bạc, mới hỏi ở đâu ra, bà huyện liền đem sự tình kể lại. Nghe xong, ông huyện mắng: – Sao mà ngốc vậy! Lại đi bảo là tuổi “tí”! Cứ bảo tuổi “Sửu” có được không!"],
+st:["Mở: quan huyện thanh liêm không nhận lễ.","Thắt: bà huyện nói quan “tuổi Tí”; dân đúc chuột bạc đặc ruột và đem đến.","Nút: quan trách vợ sao không nói “tuổi Sửu”."],
+bp:["Chơi chữ (con giáp: Tí / Sửu)","Nghịch lý (quan thanh liêm nhưng vẫn ngầm chấp nhận lễ)","Phóng đại (chuột bạc đặc ruột)"],
+gt:"Truyện đả kích thói hối lộ tinh vi: “tuổi Tí” là lời ám chỉ con chuột bạc, một cách che đậy việc nhận của đút. Quan thanh liêm trên danh nghĩa, nhưng lời trách vợ lại vô tình cho thấy ông biết chuyện và chỉ chê cách làm vụng về. Tiếng cười nằm ở sự mâu thuẫn ấy."},
+{id:11,n:"Truyện 11",t:"Quan lớn mua vàng",g:"Xã hội & quan lại",ic:"🪙",
+tom:"Quan được trả nửa giá, trừ vàng; quan lấy một lạng vàng rồi đòi coi việc trả lại là trả nửa giá.",
+en:"By old custom officials pay half price for anything except gold. A magistrate buys two taels of gold, puts one into his pocket and leaves the other. When the goldsmith asks for payment, the magistrate says he has paid by giving back one tael, which he claims is paying half.",
+vi:["Theo lệ ngày xưa, ai làm quan thì mua món gì cũng chỉ phải trả nửa giá tiền, trừ mua vàng phải trả đủ.", "Một ông quan nọ vừa đến nhậm chức, bảo hiệu vàng đem hai lạng đến bán cho ngài. Chủ hiệu vàng nghe tiếng quan dữ như cọp, mới bẩm: – Vàng mỗi lạng thực giá sáu chục đồng, song quan lớn thì trả một nửa cũng được.", "Quan cầm hai lạng vàng xem, rồi ung dung bỏ một lạng vào túi. Chủ hiệu tưởng quan chỉ mua có một lạngChủ hiệu tưởng quan chỉ mua có một lạng, còn lạng kia trả lại, nên khi quan vào nhà trong, anh ta vẫn đứng đấy đợi trả tiền. Hồi lâu quan ra, thấy vậy mới hỏi: – Mua bán xong rồi, còn đứng đấy làm gì? – Con chờ quan lớn trả tiền cho. – Tiền trả rồi, còn đòi gì nữa? – Hai lạng, quan trả lại một lạng, lấy một lạng.", "Quan nổi giận: – Nhà ngươi lạ thật! Nhà ngươi bảo ta trả một nửa cũng được. Ta mua hai lạng, nhưng chỉ lấy một, trả lại một chẳng phải là đã trả một nửa là gì!"],
+st:["Mở: luật quan được trả nửa giá, trừ vàng.","Thắt: quan lấy một lạng, bỏ một lạng vào túi; chủ hiệu chờ tiền.","Nút: quan cho rằng trả lại một lạng là đã trả một nửa."],
+bp:["Nghịch lý (lập luận sai mà vẫn tự tin)","Châm biếm đặc quyền","Nói ngược luật lệ"],
+gt:"Quan lợi dụng đặc quyền giảm giá để biện hộ cho việc lấy không tiền, và lập luận của ông ta trắng trợn nhưng vẫn cứ tự tin. Tiếng cười châm biếm những kẻ mượn chức quyền để chiếm lợi."},
+{id:12,n:"Truyện 12",t:"Có con giun đất!",g:"Xã hội & quan lại",ic:"🪱",
+tom:"Lính quan tuần nịnh là có “hòn ngọc minh châu” trong râu; lính quan án học theo và nói sợi bún là “giun đất”.",
+en:"A bearded magistrate and a clean-shaven judge dine together. A grain of rice sticks in the magistrate’s beard, and his servant calls it a precious pearl. Later, a rice noodle clings to the judge’s lip, and the judge’s servant calls it an earthworm. The servant copies the flattery but overdoes it.",
+vi:["Quan tuần rậm râu, ngồi ăn cơm với quan án không râu. Có hạt cơm dính vào râu quan tuần, anh lính hầu quan tuần vội bẩm: – Bẩm cụ lớn, trong bộ râu cụ lớn có hòn ngọc minh châu. Quan tuần thủng thẳng vuốt râu để cho hạt cơm rơi xuống.","Quan án về nhà, bảo anh lính hầu mình: – Đấy mày xem! Lính bên quan tuần khôn ngoan thế đấy! Giá mày học được như nó thì có phải tao cũng được mát mặt không?","Cách mấy hôm sau, quan tuần sang quan án ăn cơm. Có sợi bún dính ở mép quan án, anh lính hầu quan ăn trông thấy vội bẩm: – Bẩm cụ lớn, trên mép cụ lớn có con giun đất đấy ạ!"],
+st:["Mở: hạt cơm dính râu quan tuần.","Thắt: lính nịnh là “hòn ngọc minh châu”; quan án muốn học theo.","Nút: sợi bún trên mép quan án thành “con giun đất”."],
+bp:["Phóng đại (ngọc minh châu / giun đất)","Lặp cấu trúc (hai lần)","Châm biếm thói nịnh bợ"],
+gt:"Lính quan tuần nịnh khéo, nhưng lính quan án học theo mà làm vụng, biến cả sợi bún thành con giun đất. Sự đối lập giữa “ngọc minh châu” quý giá và “con giun đất” bẩn thỉu tạo ra tiếng cười mạnh. Truyện đả kích thói nịnh bợ thiếu hiểu biết."},
+{id:13,n:"Truyện 13",t:"Bốn cẳng, sáu cẳng",g:"Chơi chữ",ic:"🐎",
+tom:"Được lệnh cưỡi ngựa đi trát gấp, anh lính lệ lại xắn quần chạy bộ bên ngựa vì “bốn cẳng nhanh hơn sáu cẳng”.",
+en:"A clerk is told to ride a horse to deliver an urgent notice. Instead he hitches up his trousers and runs beside the horse. When asked, he explains that four legs run faster than six, meaning a horse with a rider has six legs.",
+vi:["Một thầy cai sai lính lệ đi trát gấp, bảo anh ta lấy ngựa mà cưỡi. Anh lính lệ dắt ngựa ra đường nhưng không cưỡi, cứ xắn quần lên tận gối, cắm cổ chạy theo ngựa. Người qua đường lấy làm lạ hỏi: – Anh điên hay sao mà không cưỡi lên ngựa chạy cho mau?","Anh lính lệ trả lời: – Khéo cho anh! Bốn cẳng lại nhanh hơn sáu cẳng được à!"],
+st:["Mở: lệnh cưỡi ngựa đi trát gấp.","Thắt: anh lính xắn quần chạy bộ bên ngựa, không cưỡi.","Nút: “Bốn cẳng lại nhanh hơn sáu cẳng được à!”"],
+bp:["Chơi chữ (đếm chân: bốn cẳng, sáu cẳng)","Lập luận theo nghĩa đen","Châm biếm sự máy móc, phi lý"],
+gt:"Anh lính đếm chân theo nghĩa đen: ngựa một mình có bốn chân, còn ngựa có người cưỡi là sáu chân, nên theo anh ta, dắt ngựa không người cưỡi thì nhanh hơn. Lập luận nghe có vẻ đúng nhưng hoàn toàn vô lý, và tiếng cười châm biếm lối hiểu máy móc mệnh lệnh."},
+{id:14,n:"Truyện 14",t:"Sao đã vội chết?",g:"Xã hội & quan lại",ic:"🩺",
+tom:"Ông lang khoe chữa bệnh giỏi; cháu ông lão chết sau ba tháng uống thuốc, ông lang đổ lỗi cho gia đình.",
+en:"A traditional healer always boasts about his skill. An old man reminds him that his grandson died after taking his medicine for only three months. The healer blames the family: the medicine should have been taken for a full year, so why did the boy die so early?",
+vi:["Một ông thầy lang xưa nay vẫn khoe chữa bệnh giỏi, ngày nọ có một ông lão đột ngột lại hỏi: – Lão nghe thầy chữa bệnh thần lắm, thầy đã chữa khỏi được mấy đám rồi?","Ông lang quả quyết đáp: – Bao nhiêu đám mà nghe lời tôi là chữa khỏi hết.","Ông lão cau mặt nói: – Thầy quên rồi à? Thầy bảo thằng cháu nhà tôi uống thuốc của thầy một năm thì khỏi, sao nó mới uống được ba tháng đã chết?","Ông lang xua tay nói: – Rõ ràng tại cậu nhà không chịu nghe lời tôi. Tôi bảo uống thuốc một năm, sao mới uống ba tháng đã vội chết? Cứ uống thuốc đủ năm, xem có khỏi không nào?"],
+st:["Mở: ông lang khoe chữa bệnh giỏi.","Thắt: ông lão nhắc đến đứa cháu chết sau ba tháng uống thuốc.","Nút: ông lang đổ lỗi ngược lại cho người bệnh: sao vội chết?"],
+bp:["Nói ngược (đổ lỗi cho nạn nhân)","Nghịch lý (lập luận vòng)","Châm biếm lang băm"],
+gt:"Ông lang không bao giờ nhận lỗi, và anh ta biến chính cái chết thành lý do để trách gia đình. Tiếng cười ở đây là tiếng cười chua chát. Khi dạy, nên nhấn mạnh việc đừng tin lời khoe khoang chữa bệnh, và đừng cười một người đang đau buồn."},
+{id:15,n:"Truyện 15",t:"Thầy bói xem voi",g:"Thói xấu",ic:"🐘",
+tom:"⭐ Bổ sung: năm thầy bói mù sờ voi, mỗi người tả một bộ phận rồi cãi nhau vì ai cũng cho mình đúng.",
+en:"⭐ Extra text (retold in my own words). Five blind fortune-tellers each touch one part of an elephant and describe the whole animal from that part: a pillar, a fan, a carrying pole, a stake, a broom. They quarrel, each sure he is right.",
+vi:["Năm thầy bói mù được mời đi xem voi. Thầy sờ vào chân voi, bảo voi giống cái cột nhà. Thầy sờ vào tai, bảo voi giống cái quạt thóc. Thầy sờ vào vòi, bảo voi giống cái đòn gánh. Thầy sờ vào ngà, bảo voi giống cái cọc. Thầy sờ vào đuôi, bảo voi giống cái chổi sể.","Năm thầy cãi nhau om sòm, ai cũng khẳng định mình đã xem đúng, còn ba thầy kia nói sai hết."],
+st:["Mở: năm thầy bói mù được mời xem voi.","Thắt: mỗi thầy sờ một bộ phận và tả khác nhau.","Nút: cả năm thầy đều cãi nhau, ai cũng cho rằng mình đúng."],
+bp:["So sánh, ẩn dụ","Đối thoại cãi nhau","Phóng đại sự chủ quan"],
+gt:"Đây là một ngụ ngôn gần với truyện cười. Mỗi thầy đúng ở phần mình sờ, nhưng sai khi khẳng định cả con voi giống hệt phần đó. Truyện nhắc rằng chỉ nhìn một phía mà đã vội kết luận thì dễ sai, và tiếng cười đến từ thói chủ quan, hay cãi."}
+];
+STORIES=STORIES.concat([
+{id:16,n:"Truyện 16",t:"Nói có đầu có đuôi",g:"Ngốc nghếch & nghịch lý",ic:"🧥",
+tom:"Anh đầy tớ được dặn nói cho có đầu có đuôi, nhưng chuỗi lập luận ngay ngắn của anh lại dẫn tới cái áo đang cháy.",
+en:"A rash servant is told to speak in a logical order. His master sits smoking in a new suit. The servant gives a neat, step-by-step speech about silkworms, silk, cloth and tailoring, and ends with the warning that the cigarette ash has set the shirt on fire.",
+vi:["Một lão nhà giàu có anh đầy tớ tính rất bộp chộp, thấy có gì nói ấy, gặp đâu nói đó, chẳng có đầu có đuôi gì cả. Lão mới gọi anh ta bảo:","– Mày ăn nói chẳng có đầu đuôi gì cả, người ta cười cả tao lẫn mày. Từ rày nói cái gì thì phải nói cho có đầu có đuôi nghe không!","Anh đầy tớ vâng vâng dạ dạ.","Một hôm lão mặc quần áo sắp sửa đi chơi, đang ngồi hút thuốc thì thấy anh đầy tớ đứng chắp tay trịnh trọng nói:","– Thưa ông, con tằm nó nhả tơ, người ta mang tơ bán cho người Tàu, người Tàu đem dệt thành the rồi bán sang ta. Ông đi mua the về may thành áo. Hôm nay ông mặc áo ông hút thuốc. Tàn thuốc nó rơi vào áo ông, và áo ông đang cháy."],
+st:["Mở: lão chủ dặn người hầu phải nói có đầu có đuôi.","Thắt: lão ngồi hút thuốc; người hầu trình bày ngay ngắn một chuỗi lập luận.","Nút: chuỗi lập luận dẫn đến “áo ông đang cháy”."],
+bp:["Nghịch lý (đúng hình thức, sai nội dung)","Chuỗi liên tưởng dài","Châm biếm sự bộp chộp, hiểu lời dặn máy móc"],
+gt:"Anh đầy tớ làm đúng yêu cầu về hình thức: lời nói có trình tự, có đầu có đuôi. Nhưng nội dung chẳng liên quan gì đến nhau, nên chuỗi lập luận đi từ con tằm đến cái áo đang cháy trở nên buồn cười. Truyện chế giễu việc hiểu lời dặn một cách máy móc."},
+{id:17,n:"Truyện 17",t:"Hết khoe chữ",g:"Mưu trí & đối đáp",ic:"📜",
+tom:"Nhà sư hay khoe chữ thách đối; học trò đối lại khéo léo và từ đó nhà sư không dám khoe nữa.",
+en:"A monk who loves showing off his learning challenges a student with a couplet. The couplet mocks the student, so the student answers with a sharp couplet that turns the monk’s order of rank upside down. From then on the monk stops boasting.",
+vi:["Có một nhà sư hay khoe chữ, thích đối đáp. Một hôm, học trò vào vui cảnh chùa, nhà sư ra câu đối, thách đối:","– Nhất sĩ nhì nông, hết gạo chạy rông, nhất nông nhì sĩ","Thấy câu đối có ý châm chọc mình, anh học trò liền trả miếng:","– Trên sư dưới sãi, ngảng lưng trở lại, trên vãi dưới sư","Từ đó, nhà sư chỉ lo đọc kinh kệ, không dám khoe chữ nữa."],
+st:["Mở: nhà sư hay khoe chữ, thích đối đáp.","Thắt: nhà sư ra câu đối có ý châm chọc học trò.","Nút: học trò đối lại bằng cách đảo thứ bậc; nhà sư chịu thua."],
+bp:["Đối đáp (câu đối)","Đảo thứ bậc để châm biếm","Lặp cấu trúc đối xứng"],
+gt:"Hai vế đối đều dựa vào thứ bậc xã hội: nhà sư đặt sĩ và nông lên đầu, còn học trò đảo lại thứ bậc của nhà sư, khiến câu đối trở thành đòn đáp trả. Tiếng cười châm biếm thói khoe chữ."},
+{id:18,n:"Truyện 18",t:"Thói quen dùng từ",g:"Thói xấu",ic:"💧",
+tom:"Anh keo kiệt ngã xuống sông; người ta gọi “đưa tay” thì anh không chịu, nhưng nghe “cầm lấy tay” thì nắm ngay.",
+en:"A stingy man falls into a river. A passer-by shouts “Give me your hand!” and he refuses to take it. Another man says “Take my hand!” and he grabs it at once. The rescuer explains that the man is so stingy that he only wants to take things, never to give.",
+vi:["Có anh chàng nọ tính tình keo kiệt. Một hôm, đi đò qua sông, anh chàng khát nước bèn cúi xuống, lấy tay vục nước sông uống. Chẳng may quá đà, anh ta lộn cổ xuống sông. Một người ngồi cạnh thấy thế, vội giơ tay ra, hét lên:","– Đưa tay cho tôi mau!","Anh chàng sắp chìm nghỉm nhưng vẫn không chịu nắm tay người kia. Bỗng một người có vẻ quen biết anh chàng chạy lại, nói:","– Cầm lấy tay tôi này!","Tức thì, anh ta cố ngoi lên, nắm chặt lấy tay người nọ và được cứu thoát. Trong lúc anh chàng còn mê mệt, người nọ giải thích:","– Tôi nói thế vì biết tính anh này. Anh ấy chỉ muốn cầm của người khác, chứ không bao giờ chịu đưa cho ai cái gì."],
+st:["Mở: anh keo kiệt cúi xuống sông uống nước và ngã.","Thắt: người kia hô “Đưa tay cho tôi!” nhưng anh không chịu nắm.","Nút: “Cầm lấy tay tôi này!” — anh nắm ngay; người cứu giải thích tính keo kiệt của anh."],
+bp:["Chơi chữ (đưa ↔ cầm)","Nghịch lý (sắp chết vẫn giữ thói quen)","Châm biếm thói keo kiệt"],
+gt:"Hai từ “đưa” và “cầm” trái nghĩa nhau, nhưng với người keo kiệt, “đưa” là điều anh không làm được, còn “cầm” thì anh làm ngay. Tiếng cười vừa châm biếm thói bủn xỉn vừa cho thấy thói quen có thể mạnh đến mức nào."},
+{id:19,n:"Truyện 19",t:"Nhưng nó phải bằng hai mày!",g:"Xã hội & quan lại",ic:"⚖️",
+tom:"Lí trưởng xử kiện theo tiền: Cải lót năm đồng, Ngô lót mười đồng, nên lẽ phải “phải bằng hai”.",
+en:"A village headman is famous for judging cases well, but he takes bribes. Cải pays him five dong and Ngô pays ten. The headman rules against Cải. When Cải protests, the headman admits Cải is right, but Ngô is “twice as right”, because Ngô paid twice as much.",
+vi:["Làng kia có một tên lí trưởng nổi tiếng xử kiện giỏi.","Một hôm nọ, Cải với Ngô đánh nhau, rồi mang nhau đi kiện. Cải sợ kém thế, lót trước cho thầy Lí năm đồng. Ngô biếu chè lá những mười đồng. Khi xử kiện thầy Lí nói:","– Thằng Cải đánh thằng Ngô đau hơn, phạt một chục roi.","Cải vội xòe năm ngón tay, ngẩn mặt nhìn thầy Lí, khẽ lẩm bẩm: – Xin xét lại, lẽ phải về con mà!","Thầy Lí cũng xòe năm ngón tay trái úp mu lên trên ngón tay mặt nói: – Tao biết mày phải… nhưng nó lại phải… bằng hai mày!"],
+st:["Mở: Cải và Ngô đánh nhau rồi đi kiện; Cải lót năm đồng, Ngô lót mười đồng.","Thắt: lí trưởng phạt Cải; Cải xòe năm ngón tay xin xét lại.","Nút: lí trưởng xòe năm ngón úp lên năm ngón kia: “nó lại phải… bằng hai mày!”"],
+bp:["Chơi chữ bằng cử chỉ (năm ngón úp hai bàn tay = mười)","Châm biếm việc xử kiện vì tiền","Nói ngược (lẽ phải được tính bằng tiền)"],
+gt:"Lí trưởng dùng động tác bàn tay để ngầm nói số tiền: năm ngón của Cải là năm đồng, còn hai bàn tay úp vào nhau là mười đồng của Ngô. Câu “nó phải bằng hai mày” vừa thừa nhận lẽ phải của Cải, vừa cho thấy lẽ phải đã bị đem ra mua. Tiếng cười châm biếm thói xử kiện vì tiền."},
+{id:20,n:"Truyện 20",t:"Kéo cây lúa lên",g:"Ngốc nghếch & nghịch lý",ic:"🌾",
+tom:"Anh chàng ngốc thấy lúa nhà mình thấp hơn nhà bên, bèn kéo cả ruộng lúa lên cho cao; lúa héo rũ.",
+en:"A foolish man sees that his rice is shorter than his neighbour’s. He pulls all the plants up so they will be taller. Proud of his work, he tells his wife, who goes to the field and finds the rice has withered.",
+vi:["Mọi người thường gọi anh ta là một chàng ngốc. Một hôm anh ta ra đồng thấy ruộng lúa nhà mình xấu hơn ruộng lúa nhà người. Anh bèn kéo tất cả cây lúa của ruộng mình lên cao hơn lúa của nhà bên cạnh. Làm xong, anh quay về nhà khoe với vợ:","– Thấy lúa nhà mình xấu quá, tôi đã kéo chúng lên. Bây giờ thì nó đã cao hơn lúa của mọi người rồi!","Nghe chồng nói vậy, chị vợ vội ra đồng xem thử, thì thấy lúa trong thửa ruộng nhà mình đã héo rũ xuống cả rồi."],
+st:["Mở: anh ngốc thấy lúa nhà mình thấp hơn nhà bên.","Thắt: anh kéo từng cây lúa lên để nó cao hơn và khoe với vợ.","Nút: chị vợ ra đồng thì lúa đã héo rũ."],
+bp:["Nghịch lý (muốn cao hơn lại làm hỏng)","Hiểu nghĩa đen một cách máy móc","Châm biếm sự ngốc nghếch"],
+gt:"Anh ta hiểu “làm cho lúa cao lên” theo nghĩa đen và làm quá đà, nên kết quả trái hẳn với mong muốn. Truyện nhắc rằng hành động thiếu hiểu biết thường mang lại hậu quả trái ngược."},
+{id:21,n:"Truyện 21",t:"Giấu cày",g:"Ngốc nghếch & nghịch lý",ic:"🪓",
+tom:"Vợ gọi ăn cơm, anh nông dân la to “để tôi giấu cày”; vợ sợ trộm nghe thấy, rồi cái cày thật sự biến mất.",
+en:"A farmer is called home for dinner. He shouts that he is hiding his plough in the bushes. His wife warns that thieves may hear him and take it. After the meal he runs back to the field, but the plough is gone. He whispers to his wife that the thieves have taken it.",
+vi:["Chuyện kể về bác nông dân đang mải mê cày ruộng thì vợ réo gọi về ăn cơm. Thấy vợ hối thúc quá, bác ta la to lên:","– Để tôi giấu cày vào bụi cây kia đã!","Về nhà vợ bác trách:","– Đi giấu cày mà la lên như thế, kẻ trộm nó nghe được, nó lấy đi thì sao?","Cơm nước xong, bác chạy một mạch ra ruộng, đến chỗ giấu cày thì hỡi ôi, cái cày đã biến đi đâu mất. Bác vội quay về nhà, nhìn trước nhìn sau, thấy không có người, bác mới ghé vào tai vợ thầm thì:","– Chúng nó lấy mất cái cày rồi!"],
+st:["Mở: bác nông dân được vợ gọi về ăn cơm.","Thắt: bác la to “để tôi giấu cày”; vợ trách sợ kẻ trộm nghe thấy.","Nút: cái cày đã biến mất; bác thì thầm “chúng nó lấy mất cái cày rồi!”"],
+bp:["Nghịch lý (cố giấu mà lại nói to)","Lời cảnh báo thành hiện thực","Châm biếm sự hấp tấp và vụng về"],
+gt:"Anh vừa la to, vừa sợ người khác nghe thấy, rồi cuối cùng lại thì thầm như thể việc mất cày là điều không nên công khai. Tiếng cười vui về sự vụng về của người nông dân."},
+{id:22,n:"Truyện 22",t:"Đổi giày",g:"Ngốc nghếch & nghịch lý",ic:"👞",
+tom:"Anh đi nhầm đôi giày, chiếc cao chiếc thấp, rồi đổ lỗi cho đường; giày ở nhà cũng… cao thấp như thế.",
+en:"A man wears two mismatched shoes, one higher than the other, and blames the bumpy road. A passer-by tells him he has the wrong shoes. He sends his servant home to fetch the other pair, but the servant reports that the shoes at home are mismatched in exactly the same way.",
+vi:["Một anh đi nhầm giày, chiếc cao chiếc thấp. Ra đường, thấy bước khó khăn, anh ta phàn nàn:","– Quái lạ! Chân mình hôm nay sao lại bên dài, bên ngắn thế này? Hay là đường cái khấp khểnh?","Có kẻ qua đường nghe thấy, bảo: – Không phải, ông đi nhầm giày, chiếc cao chiếc thấp đây!","Anh ta vội sai ngay đầy tớ về nhà đổi lấy đôi giày kia.","Anh đầy tớ chạy về một lúc chạy ra, vừa thở vừa nói: – Thưa ông, hai chiếc ở nhà cũng chiếc cao, chiếc thấp như thế thôi ạ!"],
+st:["Mở: anh đi nhầm giày, bước đi khó khăn.","Thắt: anh đổ lỗi cho đường; người qua đường chỉ ra lỗi của anh.","Nút: đôi giày ở nhà cũng “chiếc cao, chiếc thấp”."],
+bp:["Nghịch lý (tìm lý do ở bên ngoài)","Bất ngờ ở cú kết","Châm biếm sự thiếu quan sát"],
+gt:"Anh cố đổ lỗi cho đường mà không nhìn xuống chân mình. Đến cuối truyện, người đầy tớ cho biết cả đôi giày ở nhà cũng bị “nhầm” y như vậy, nên tiếng cười là sự ngớ ngẩn của người không biết quan sát."},
+{id:23,n:"Truyện 23",t:"Ba điều ước",g:"Thói xấu",ic:"🧞",
+tom:"Bụt cho vợ chồng ba điều ước; chị vợ ước một miếng dồi chó, anh chồng ước nó dính lên mũi vợ, rồi phải dùng điều ước cuối để gỡ.",
+en:"The Buddha grants a couple three wishes. The wife wishes for a piece of dog sausage, and it appears in front of her. Her husband, angry, wishes it would stick to her nose. Frightened, he uses the third wish to remove it. All three wishes are lost.",
+vi:["Hai vợ chồng nhà nọ, một hôm rỗi rãi ngồi bàn với nhau: – Giá ta học được phép “cầu được ước thấy” thì thích biết mấy nhỉ?","Bụt nghe vậy, liền hiện lên, bảo: – Ta sẽ ban cho vợ chồng ngươi ba điều ước. Từ nay các ngươi có thể “cầu được ước thấy”. Nói xong, Bụt biến mất.","Một hôm, trời mưa to, hai vợ chồng ngồi dưới bếp rang ngô, chị vợ buột miệng nói: – Ước gì bây giờ được miếng dồi chó mà ăn thì thích biết mấy.","Tức thì, một miếng dồi chó thơm lừng xuất hiện, rơi trước mặt người vợ. Thế là mất toi một điều ước.","Anh chồng thấy vậy bực quá, chỉ miếng dồi mắng vợ: – Ước vàng ước bạc chẳng ước, lại ước một miếng dồi chó. Thế thì tôi cũng ước cho miếng dồi chó này dính ngay vào mũi cô cho cô biết thân!","Tức thì, miếng dồi chó bay lên, dính ngay vào mũi chị vợ. Hai vợ chồng sợ xanh mặt. Thế là mất toi hai điều ước.","Bây giờ, việc cấp thiết nhất là phải làm thế nào cho miếng dồi chó bay khỏi mũi người vợ. Anh chồng đành ngậm ngùi ước nốt điều cuối cùng: – Ước gì miếng dồi chó bay khỏi mũi nhà tôi.","Tức thì miếng dồi chó biến mất. Thế là đi tong cả ba điều ước."],
+st:["Mở: Bụt cho vợ chồng ba điều ước.","Thắt: chị vợ ước dồi chó; anh chồng ước dồi dính lên mũi vợ.","Nút: anh phải dùng điều ước cuối để gỡ; cả ba điều ước đều mất."],
+bp:["Lặp cấu trúc (ba lần ước)","Phản đề (ước nào cũng hỏng)","Châm biếm lòng tham và sự hấp tấp"],
+gt:"Điều ước đầu của người vợ vô nghĩa vì không được cân nhắc. Người chồng định dạy vợ bằng điều ước thứ hai nhưng lại tự tạo thêm rắc rối. Vòng lặp ba lần khiến tiếng cười tăng dần và đúc kết một bài học: ước muốn thiếu suy nghĩ tự làm hại mình."},
+{id:24,n:"Truyện 24",t:"Dân dần quan",g:"Chơi chữ",ic:"🎩",
+tom:"Hai lính hầu oán quan tham bằng một câu vè đảo chữ; quan hỏi, anh kia chữa thành lời tâng bốc.",
+en:"Two servants of a greedy magistrate grumble that the people will one day rise up against him. They chant a rhyme that plays on word order and tones. When the magistrate overhears and asks what they said, one servant reinterprets the rhyme as praise for the magistrate.",
+vi:["Có hai anh lính hầu hạ quan lâu ngày, thấy quan đã ác lại hay ăn tiền, ai có việc vào cửa quan là y như bị đánh đập tàn tệ, đến lúc xì tiền ra mới thôi.","Một hôm, rỗi rãi, hai anh ngồi kháo chuyện với nhau nói xấc quan. Một anh bảo: – Ác thế thì có ngày dân nó quật lại cho mà xem.","Quan quán quạn chi quàn quan","Dân dấn dận chi dần dân.","Quan là quan, quan quàn quan","Dân là dân, dân dần quan.","Chẳng ngờ, quan đi qua nghe được, trợn mắt hỏi: – Bay nói gì thế?","Anh kia nói chữa: – Bẩm quan, con bảo: Quan quản dân, dân… cần quan. Không có quan thì ai cai trị dân."],
+st:["Mở: quan ác, hay ăn tiền; hai lính hầu oán trách.","Thắt: một anh ngâm câu vè đảo chữ, hàm ý dân sẽ quật lại quan.","Nút: quan hỏi; anh kia chữa thành “quan quản dân, dân cần quan”."],
+bp:["Chơi chữ (đảo trật tự chữ, đổi thanh điệu)","Đối đáp khéo léo để thoát tội","Châm biếm quan tham"],
+gt:"Câu vè dựa vào việc đổi thanh điệu và thứ tự chữ để đổi nghĩa: “dân dần quan” có thể hiểu là dân sẽ dần dần đứng lên chống quan. Khi nói chữa, anh lính biến lời oán trách thành lời tâng bốc. Tiếng cười vừa châm biếm quan tham vừa cho thấy sự khéo léo của người dưới."},
+{id:25,n:"Truyện 25",t:"Tam đại con gà",g:"Chơi chữ",ic:"🐓",
+tom:"Thầy đồ dốt đọc sai chữ “kê” thành “dủ dỉ là con dù dì”, rồi bịa thêm “tam đại con gà” để gỡ thế.",
+en:"An ignorant tutor who pretends to be learned meets a character he cannot read. He makes up a nonsense reading and asks the household altar for help. When the father notices the mistake, the tutor explains that he is teaching the child the “three generations” of the chicken, with an invented chain of relatives.",
+vi:["Xưa, có anh học trò học hành dốt nát, nhưng trò đời “xấu hay làm tốt, dốt hay chơi chữ”, đi đâu cũng lên mặt văn hay chữ tốt.","Có người tưởng anh ta hay chữ thật, mới đón về dạy trẻ.","Một hôm, dạy sách Tam thiên tự, sau chữ “tước” là chim sẻ, đến chữ “kê” là gà, thầy thấy mặt chữ nhiều nét rắc rối, không biết chữ gì, học trò lại hỏi gấp, thầy cuống, nói liều: “Dủ dỉ là con dù dì”. Thầy cũng khôn, sợ nhỡ sai, người nào biết thì xấu hổ, mới bảo học trò đọc khẽ, tuy vậy, trong lòng thầy vẫn thấp thỏm.","Nhân trong nhà có bàn thờ thổ công, thầy mới đến khấn thầm xin ba đài âm dương để xem chữ ấy có phải thật là “dù dì” không. Thổ công cho ba đài được cả ba.","Thấy vậy, thầy lấy làm sắc chí lắm, hôm sau bệ vệ ngồi trên giường, bảo trẻ đọc cho to. Trò vâng lời thầy, gân cổ lên gào: – Dủ dỉ là con dù dì… Dủ dỉ là con dù dì…","Bố chúng đang cuốc đất ngoài vườn, nghe tiếng học, ngạc nhiên bỏ cuốc chạy vào, giở sách ra xem, hỏi thầy: – Chết chửa! Chữ “kê” là gà, sao thầy lại dạy ra “dủ dỉ” là con “dù dì”?","Bấy giờ thầy mới nghĩ thầm: “Mình đã dốt, thổ công nhà nó cũng dốt nữa”, nhưng nhanh trí thầy vội nói gỡ: – Tôi vẫn biết chữ ấy là chữ “kê”, mà “kê” nghĩa là “gà”, nhưng tôi dạy cháu thế là dạy cho cháu nó biết tận tam đại con gà kia.","Chủ nhà càng không hiểu, hỏi: – Tam đại con gà là nghĩa ra làm sao?","– Thế này nhé! Dủ dỉ là con dù dì, dù dì là chị con công, con công là ông con gà!"],
+st:["Mở: thầy đồ dốt nhưng hay khoe chữ, dạy trẻ Tam thiên tự.","Thắt: gặp chữ “kê”, thầy bịa “dủ dỉ là con dù dì”; xin thổ công và được ba đài.","Nút: bố học trò vạch lỗi; thầy gỡ bằng “tam đại con gà”."],
+bp:["Chơi chữ (chuỗi đồng âm vô nghĩa: dủ dỉ → dù dì → công → gà)","Châm biếm người giả vờ hiểu biết","Nghịch lý (giải thích càng rắc rối càng lộ dốt)"],
+gt:"Thầy đồ bịa ra một chuỗi quan hệ họ hàng vô nghĩa, nghe như có lý nên người nghe không biết bắt bẻ ở đâu. Càng cố gỡ, thầy càng lộ rõ sự dốt. Tiếng cười châm biếm những người dốt mà hay khoe chữ."},
+{id:26,n:"Truyện 26",t:"Đào trường thọ",g:"Mưu trí & đối đáp",ic:"🍑",
+tom:"Quỳnh ăn quả đào dâng vua, bị tội chết; Quỳnh tâu rằng “nuốt chưa khỏi mồm đã chết”, nên đặt tên là “đoản thọ”, vua bật cười tha tội.",
+en:"A tray of peaches is presented to the king as “longevity peaches”. Trạng Quỳnh eats one in front of the whole court, and the officials sentence him to death for disrespect. He pleads that he will die before he has finished swallowing, so the fruit should be renamed the “short-life” peach, and the flatterer who offered it should be punished. The king laughs and pardons him.",
+vi:["Một hôm, lúc Quỳnh đang trực trong cung, có người đem dâng vua một mâm đào, gọi là “đào trường thọ”. Quỳnh thủng thẳng lại gần, lấy một quả, ngồi ăn, giữa đông đủ mặt vua quan, làm như không trông thấy ai cả. Vua quở, giao xuống cho các quan trị tội. Các quan chiếu theo luật “mạn quân”, tâu nghị trảm. Quỳnh quỳ xuống tâu rằng:","– Đình thần nghị tội hạ thần như vậy thật là đúng luật, không oan, song xin Hoàng thượng rộng dung cho thần được nói vài lời rồi chết cũng thỏa!","Vua phán: – Ừ, muốn nói gì cho nói!","Muôn tâu bệ hạ, thần có bụng tham sống sợ chết nên thấy quả gọi là quả “trường thọ” thì thèm quá, tưởng ăn vào được sống lâu, để được thờ vua cho tận trung. Không ngờ nuốt chưa khỏi mồm mà chết đã đến cổ! Hạ thần trộm nghĩ nên đặt tên quả ấy là quả “đoản thọ” thì hơn. Và xin nhà vua trị tội người dâng đào để trừ kẻ xu nịnh.","Vua nghe Quỳnh tâu phải, bật cười tha tội cho."],
+st:["Mở: người ta dâng vua mâm đào “trường thọ”.","Thắt: Quỳnh ăn ngay trước mặt vua quan; các quan xin xử tử.","Nút: Quỳnh tâu rằng ăn xong sẽ chết ngay, nên đổi tên thành “đoản thọ”; vua bật cười tha tội."],
+bp:["Đảo nghĩa (trường thọ ↔ đoản thọ)","Châm biếm kẻ xu nịnh","Đối đáp khôn khéo với vua"],
+gt:"Quỳnh dùng chính lời nịnh để trả đũa: nếu ăn đào “trường thọ” thì chết ngay, nên quả đào phải gọi là “đoản thọ”. Lời tâu vừa khôn khéo, vừa mỉa mai kẻ xu nịnh, và vua buông tha vì thấy có lý."},
+{id:27,n:"Truyện 27",t:"Ăn trộm mèo",g:"Mưu trí & đối đáp",ic:"🐈",
+tom:"Quỳnh trộm mèo quý của vua, bắt nó ăn cơm rau; khi bị nghi ngờ, Quỳnh cho vua thử và lập luận “mèo theo nếp nhà chủ”.",
+en:"Trạng Quỳnh secretly steals the king’s favourite cat, which is used to fine food, and trains it to eat rice and vegetables only. When the king suspects him, Quỳnh asks for a test. The cat goes straight to the bowl of rice and vegetables. Quỳnh argues that a cat follows its master’s way of life, so this cat belongs to a poor household like his.",
+vi:["Nhà vua có một con mèo quý lắm, xích bằng xích vàng và cho ăn toàn những đồ ngon.","Trạng Quỳnh biết vậy, một hôm vào chầu, bí mật bắt trộm mèo về, cất xích vàng đi và buộc bằng xích sắt. Đến bữa ăn thì để hai bát cơm, một bát thịt cá, một bát chỉ có rau, xương và đầu tôm. Mèo quen ăn ngon, cứ chạy đến bát cơm thịt trước, Quỳnh cầm roi đứng cạnh hễ ăn thì đánh.","Mèo đói quá phải ăn bát cơm rau với đầu tôm. Lâu dần chịu phép, mèo không dám mon men đến bát cơm thịt. Quỳnh mới thả cho mèo ra.","Nhà vua mất mèo, tiếc quá, sai người đi tìm. Thấy nhà Quỳnh có con mèo giống hệt mèo của vua, lính vâng lệnh bắt Quỳnh đưa mèo vào chầu. Vua hỏi: – Con mèo này giống mèo của trẫm lắm. Hay là khanh thấy mèo đẹp mà bắt về.","– Tâu bệ hạ, bệ hạ nghĩ cho thần ăn trộm thì oan quá. Xin bệ hạ đem ra thử thì sẽ biết. – Thử thế nào? – Muôn tâu, bệ hạ phú quý thì ắt cho mèo ăn thức ngon vật lạ, hạ thần nghèo túng chỉ cho mèo ăn cơm rau. Xin cứ thử thì thấy ngay.","Vua bằng lòng cho thử. Quả nhiên đưa hai bát cơm ra, mèo chạy thẳng đến bát cơm rau, ăn sạch.","Quỳnh ung dung ôm mèo ra về và tâu lại với vua: – Xin bệ hạ lượng cho. Người ta phú quý thì cao lương mĩ vị, nghèo hèn thì cơm hẩm rau dưa. Mèo cũng vậy, phải theo nếp nhà của chủ nó."],
+st:["Mở: mèo quý của vua được ăn toàn đồ ngon.","Thắt: Quỳnh trộm mèo, bắt nó ăn cơm rau; vua nghi Quỳnh ăn trộm.","Nút: mèo chọn bát cơm rau; Quỳnh nói “mèo theo nếp nhà của chủ nó”."],
+bp:["Lập luận bằng thử nghiệm","Đối đáp khôn khéo với vua","Châm biếm sự phân biệt giàu nghèo"],
+gt:"Quỳnh dùng chính thói quen do mình tạo ra làm bằng chứng. Lập luận “mèo theo nếp nhà của chủ” vừa đúng lý vừa hài hước, và hàm ý mỉa mai sự phân biệt giàu nghèo của vua. Tiếng cười đến từ sự khôn ngoan của Quỳnh."},
+{id:28,n:"Truyện 28",t:"Con rắn vuông",g:"Thói xấu",ic:"🐍",
+tom:"Anh khoác lác kể con rắn to, hạ dần số đo; vợ chỉ ra con rắn có bề ngang và bề dài đều bốn mươi thước — tức là rắn vuông.",
+en:"A boastful man describes a giant snake. He lowers his estimates from a hundred metres to eighty, sixty and finally forty, insisting on each one. His wife points out that a snake forty metres wide and forty metres long must be a square snake.",
+vi:["Anh chàng nọ tính khoác lác đã quen. Bữa kia đi chơi về bảo vợ: – Này mình ạ! Hôm nay tôi đi vào rừng trông thấy một con rắn, chao ôi, to đến là to, dài đến là dài. Bề ngang thì chắc chắn là bốn mươi thước rồi, còn bề dài thì dễ đến hơn trăm thước.","Vợ không tin, nhưng cũng định trêu chồng một mẻ: – Tôi nghe người ta nói có rắn dài đã nhiều. Nhưng làm gì có giống rắn dài như anh nói thế. Tôi nhất định không tin.","Chồng làm như thật: – Thật quả có rắn như thế. Dài hơn một trăm thước thì chẳng đến, nhưng tám mươi thì nhất định!","Vợ bĩu môi: – Cũng chẳng đến!","Chồng cương quyết: – Tôi chắc chắn là nó dài sáu mươi thước chứ không ngoa.","Vợ vẫn khăng khăng: – Vẫn không dài đến nước ấy đâu!","Chồng rút lui một lần nữa: – Lần này tôi nói thật nhé. Con rắn dài đến bốn mươi thước, không kém một phân.","Vợ bò lăn ra cười: – Con rắn anh thấy, bề ngang đã chắc chắn là bốn mươi thước, bề dài cũng lại đến bốn mươi thước không kém một phân thì chẳng hoá ra là con rắn vuông à?"],
+st:["Mở: anh khoác lác kể con rắn to.","Thắt: anh hạ dần số đo: 100 → 80 → 60 → 40 thước.","Nút: vợ chỉ ra bề ngang và bề dài bằng nhau nên thành “rắn vuông”."],
+bp:["Phóng đại (khoác lác)","Phản đề (rắn vuông)","Đối đáp bằng lập luận"],
+gt:"Người chồng hạ dần con số để có vẻ thực tế, nhưng cuối cùng hai số đo trùng nhau và lời vợ biến lời khoác lác thành một hình ảnh vô lý. Truyện châm biếm những lời khoe khoang không có căn cứ."}
+]);
+(function(){
+  var grid=document.getElementById('grid');
+  var mdl=document.getElementById('mdl');
+  var mbody=document.getElementById('mbody');
+  var fbtns=document.querySelectorAll('.fbtn');
+  var q=document.getElementById('q');
+  var count=document.getElementById('count');
+  var grp='all';
+  function paras(arr){
+    return arr.map(function(l){return '<p style="margin:6px 0">'+l+'</p>';}).join('');
+  }
+  function chips(arr){
+    return arr.map(function(x){return '<span>'+x+'</span>';}).join('');
+  }
+  function close(){ mdl.classList.remove('on'); mdl.setAttribute('aria-hidden','true'); }
+  function open(s){
+    mbody.innerHTML=
+      '<div class="mh"><div class="ic">'+s.ic+'</div><div><div class="mlab" style="margin:0">'+s.n+' · '+s.g+'</div><h3>'+s.t+'</h3></div></div>'+
+      '<div class="mlab">Văn bản</div><div class="mpoem vi">'+paras(s.vi)+'</div>'+
+      '<div class="mlab">Tóm tắt tiếng Anh (English summary)</div><p class="mgt en">'+s.en+'</p>'+
+      '<div class="mlab">Bố cục: Mở – Thắt – Nút</div><div class="mchips">'+chips(s.st)+'</div>'+
+      '<div class="mlab">Thủ pháp gây cười</div><div class="mchips">'+chips(s.bp)+'</div>'+
+      '<div class="mlab">Giải thích</div><p class="mgt">'+s.gt+'</p>';
+    mdl.classList.add('on'); mdl.setAttribute('aria-hidden','false');
+    mbody.scrollTop=0;
+  }
+  STORIES.forEach(function(s){
+    var a=document.createElement('article');
+    a.className='pc';
+    a.setAttribute('data-g',s.g);
+    a.innerHTML='<div class="ic">'+s.ic+'</div><span class="bnum">'+s.n+'</span><h3>'+s.t+'</h3><p>'+s.tom+'</p>'+(s.id===15?'<span class="tag">Bổ sung</span>':'');
+    a.addEventListener('click',function(){ open(s); });
+    grid.appendChild(a);
+  });
+  var cards=grid.querySelectorAll('.pc');
+  function applyFilter(){
+    var t=(q.value||'').trim().toLowerCase();
+    var n=0;
+    cards.forEach(function(c){
+      var okG=(grp==='all')||(c.getAttribute('data-g')===grp);
+      var okT=!t||c.textContent.toLowerCase().indexOf(t)!==-1;
+      var show=okG&&okT;
+      c.style.display=show?'':'none';
+      if(show)n++;
+    });
+    count.textContent=n;
+  }
+  fbtns.forEach(function(b){
+    b.addEventListener('click',function(){
+      fbtns.forEach(function(x){x.classList.remove('on');});
+      b.classList.add('on');
+      grp=b.getAttribute('data-g');
+      applyFilter();
+    });
+  });
+  q.addEventListener('input',applyFilter);
+  document.getElementById('mx').addEventListener('click',close);
+  mdl.addEventListener('click',function(ev){ if(ev.target===mdl) close(); });
+  document.addEventListener('keydown',function(ev){ if(ev.key==='Escape') close(); });
+  applyFilter();
+})();
+(function(){
+  document.querySelectorAll('.opts button').forEach(function(btn){
+    btn.addEventListener('click',function(){
+      var box=btn.closest('.q');
+      if(box.getAttribute('data-done'))return;
+      box.setAttribute('data-done','1');
+      var ok=btn.getAttribute('data-ok')==='1';
+      btn.classList.add(ok?'ok':'bad');
+      box.querySelectorAll('.opts button').forEach(function(b){
+        if(b.getAttribute('data-ok')==='1')b.classList.add('ok');
+      });
+      var r=box.querySelector('.reveal');
+      if(r)r.classList.add('on');
+    });
+  });
+  document.querySelectorAll('a[href^="#"]').forEach(function(a){
+    a.addEventListener('click',function(ev){
+      var id=a.getAttribute('href').slice(1);
+      var el=document.getElementById(id);
+      if(el){ev.preventDefault(); el.scrollIntoView({behavior:'smooth'}); history.replaceState(null,'','#'+id);}
+    });
+  });
+})();
+</script>
+</body>
+</html>
